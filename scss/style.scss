@@ -1,0 +1,165 @@
+
+@import "variables.scss";
+
+/*INDEX*/
+body {
+    color: $primaryText;
+    background-color: $lightPrimaryColor;
+    font-family: $genericFont;
+
+    header {
+        background-color: $darkPrimaryColor;
+        width: 100%;
+
+        nav {
+            a {
+                padding: 12px;
+                text-decoration: none;
+                font-size: 20px;
+                color: $lightSecondaryColor;
+                justify-content: flex-end;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: $white;
+                }
+
+                h1 {
+                    font-family: $headerFont;
+                    color: $white;
+                    font-size: 40px;
+                    justify-content: flex-start;
+                }
+            }
+
+            div {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+
+    main.container {
+        background-color: $dividerColor;
+
+        section.row {
+            div.informacion-portada {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                p {
+                    color: $secondaryText;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    text-align: center;
+                    box-shadow: 11.8px 1.1rem 1rem -8px;
+                }
+
+                h2 {
+                    background-color: rgba(255, 255, 255, 0.5);
+                    text-align: center;
+                    font-family: serif;
+                    font-size: 35px;
+                    color: $primaryText;
+                    margin-bottom: 0;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: $primaryColor;
+        width: 100%;
+
+        div.links-redes {
+            display: flex;
+            justify-content: center;
+
+            a {
+                i.mdi {
+                    font-size: 30px;
+                    margin: 2px 20px 2px 20px;
+                    color: $lightSecondaryColor;
+
+                    &:hover {
+                        color:$white;
+                    }
+                }
+            }
+        }
+
+        p {
+            text-align: center;
+            background-color:$darkPrimaryColor ;
+            color: $white;
+            padding: 10px 0 10px 0;
+            margin: 0;
+            width: 100%;
+        }
+    }
+};
+
+/*GALERIA*/
+div.card{
+    background-color: $dividerColor;
+    div.card-header{
+        font-family: $genericFont;
+        color: $primaryText;
+        button.btn{
+            font-size: 1.5rem;
+            &:hover{
+                color:$accentColor;
+            }
+        }
+    }
+}
+
+/*TRABAJOS*/
+main{
+    div.galeria{
+        background-color: $primaryColor;
+        div.trabajos {
+            div {
+                video {
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+;
+
+/*CONTACTO*/
+div.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+;
+
+/*RESPONSIVE*/
+
+@media (max-width: 576px) {
+    // XS
+
+}
+
+@media (min-width: 576px) and (max-width:767px) {
+    // SM
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+    // MD
+}
+
+@media (min-width: 992px) and (max-width:1199px) {
+    // LG
+}
+
+@media (min-width: 1200px) {
+    // XL
+
+}

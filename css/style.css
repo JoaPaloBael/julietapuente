@@ -1,0 +1,88 @@
+/*INDEX*/
+body {
+  color: #212121;
+  background-color: #00BCD4;
+  font-family: "Josefin Sans", sans-serif; }
+  body header {
+    background-color: #374046;
+    width: 100%; }
+    body header nav a {
+      padding: 12px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #B2EBF2;
+      justify-content: flex-end; }
+      body header nav a:hover {
+        text-decoration: underline;
+        color: #FFFFFF; }
+      body header nav a h1 {
+        font-family: "Yeseva One", cursive;
+        color: #FFFFFF;
+        font-size: 40px;
+        justify-content: flex-start; }
+    body header nav div {
+      display: flex;
+      flex-direction: row; }
+  body main.container {
+    background-color: #BDBDBD; }
+    body main.container section.row div.informacion-portada {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      body main.container section.row div.informacion-portada p {
+        color: #757575;
+        background-color: rgba(255, 255, 255, 0.5);
+        text-align: center;
+        box-shadow: 11.8px 1.1rem 1rem -8px; }
+      body main.container section.row div.informacion-portada h2 {
+        background-color: rgba(255, 255, 255, 0.5);
+        text-align: center;
+        font-family: serif;
+        font-size: 35px;
+        color: #212121;
+        margin-bottom: 0;
+        margin-top: 1rem; }
+  body footer {
+    background-color: #0097A7;
+    width: 100%; }
+    body footer div.links-redes {
+      display: flex;
+      justify-content: center; }
+      body footer div.links-redes a i.mdi {
+        font-size: 30px;
+        margin: 2px 20px 2px 20px;
+        color: #B2EBF2; }
+        body footer div.links-redes a i.mdi:hover {
+          color: #FFFFFF; }
+    body footer p {
+      text-align: center;
+      background-color: #374046;
+      color: #FFFFFF;
+      padding: 10px 0 10px 0;
+      margin: 0;
+      width: 100%; }
+
+/*GALERIA*/
+div.card {
+  background-color: #BDBDBD; }
+  div.card div.card-header {
+    font-family: "Josefin Sans", sans-serif;
+    color: #212121; }
+    div.card div.card-header button.btn {
+      font-size: 1.5rem; }
+      div.card div.card-header button.btn:hover {
+        color: #7C4DFF; }
+
+/*TRABAJOS*/
+main div.galeria {
+  background-color: #0097A7; }
+  main div.galeria div.trabajos div video {
+    justify-content: center; }
+
+/*CONTACTO*/
+div.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+/*RESPONSIVE*/

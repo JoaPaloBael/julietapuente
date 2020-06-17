@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.2.45/css/materialdesignicons.min.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Yeseva+One&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"">
+    <link rel=" stylesheet" type="text/css" href="css/style.css">
+	<title>Porfolio fotográfico</title>
+</head>
+
+<body>
+	<!-- HEADER -->
+
+	<header class="container">
+		<nav class="navbar navbar-expand-lg">
+			<a class="navbar-brand" href="index.html">
+				<h1>Julieta Puente</h1>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon">
+					<i class="mdi mdi-chevron-down m-0"></i>
+				</span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="galeria.html">Galería</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="trabajos.html">Trabajos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contacto.html">Contacto</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!-- CONTENIDO PRINCIPAL -->
+
+	<!-- FORMULARIO -->
+	<div class="container formulario">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="well well-sm">
+					<form class="form-horizontal" method="GET">
+						<fieldset>
+							<legend class="text-center header">Contactame</legend>
+
+							<div class="form-group">
+								<span class="col-md-1 col-md-offset-2 text-center"><i class="mdi mdi-account"></i>
+									Nombre y apellido</span>
+								<div class="col-md-8">
+									<input id="fname" name="name" type="text" placeholder="Pipi Puente"
+										class="form-control">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<span class="col-md-1 col-md-offset-2 text-center"><i
+										class="mdi mdi-email"></i>Email</span>
+								<div class="col-md-8">
+									<input id="email" name="email" type="mail" placeholder="pipi@elmaslindo.com"
+										required class="form-control">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<span class="col-md-1 col-md-offset-2 text-center"><i
+										class="mdi mdi-cellphone"></i>Celular</span>
+								<div class="col-md-8">
+									<input id="phone" name="phone" type="text" placeholder="0303456" required
+										class="form-control">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<span class="col-md-1 col-md-offset-2 text-center"><i
+										class="mdi mdi-card-text-outline"></i>Consulta</span>
+								<div class="col-md-8">
+									<textarea class="form-control" id="message" name="message"
+										placeholder="Escriba aquí su consulta :)" rows="8"></textarea>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-md-12 text-center">
+									<button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+								</div>
+							</div>
+
+							<div>
+								<input type="reset" name="resetear" id="borrar" value="Volver a empezar"><label
+									for="borrar"></label>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<footer class="container">
+		<div class="links-redes row">
+			<a href="mailto: PH.julietapuente@gmail.com" target="_blank">
+				<i class="mdi mdi-gmail"></i>
+			</a>
+			<a href="http://www.facebook.com/julieta.puente" target="_blank">
+				<i class="mdi mdi-facebook"></i>
+			</a>
+			<a href="http://www.instagram.com/burntoutbridge/" target="_blank">
+				<i class="mdi mdi-instagram"></i>
+			</a>
+		</div>
+		<div class="row">
+			<p>BurnOutBridge &copy 2020</p>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

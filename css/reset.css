@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    vertical-align: middle;
+}
+
+body{
+    font-family: helvetica;
+    color: #555555;
+    background-color:#eeee ;
+    margin: 0;
+    padding: 0px;
+    position: relative;
+    font-size: 1rem;
+}
