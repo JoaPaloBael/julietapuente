@@ -147,8 +147,11 @@ div.formulario {
 
 /*RESPONSIVE*/
 
-@media (max-width: 576px) {
+@media (max-width: 421px) {
     // XS
+    h1{
+        display: none;
+    }
 
 }
 
