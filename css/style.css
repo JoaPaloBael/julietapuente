@@ -74,10 +74,12 @@ div.card {
         color: #7C4DFF; }
 
 /*TRABAJOS*/
-main div.galeria {
+div.galeria {
   background-color: #0097A7; }
-  main div.galeria div.trabajos div video {
+  div.galeria section.trabajos div {
     justify-content: center; }
+    div.galeria section.trabajos div video {
+      max-width: 450px; }
 
 /*CONTACTO*/
 div.formulario {

@@ -116,14 +116,14 @@ div.card{
 }
 
 /*TRABAJOS*/
-main{
-    div.galeria{
-        background-color: $primaryColor;
-        div.trabajos {
-            div {
-                video {
-                    justify-content: center;
-                }
+
+div.galeria{
+    background-color: $primaryColor;
+    section.trabajos {
+        div{
+            justify-content: center;
+            video {
+                max-width: 450px;
             }
         }
     }
