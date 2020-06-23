@@ -7,7 +7,7 @@ body {
     background-color: $lightPrimaryColor;
     font-family: $genericFont;
 
-    header {
+    header{
         background-color: $darkPrimaryColor;
         width: 100%;
 
@@ -29,12 +29,17 @@ body {
                     color: $white;
                     font-size: 40px;
                     justify-content: flex-start;
+                    margin: 0;
                 }
             }
 
             div {
-                display: flex;
+                display: block;
                 flex-direction: row;
+                justify-content: right;
+                ul{
+                    justify-content: center;
+                }
             }
         }
     }
