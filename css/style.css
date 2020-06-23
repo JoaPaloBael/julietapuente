@@ -92,3 +92,6 @@ div.formulario {
   justify-content: center; }
 
 /*RESPONSIVE*/
+@media (max-width: 421px) {
+  h1 {
+    display: none; } }
