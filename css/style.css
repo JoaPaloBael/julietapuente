@@ -76,7 +76,7 @@ main.container.index {
       margin-top: 1rem; }
 
 /*GALERIA*/
-h1.headerLandscape {
+h1#abrirLandscapeMenu.headerLandscape {
   font-weight: 400;
   text-align: center;
   padding: 10px 0 0 0;
