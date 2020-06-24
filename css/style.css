@@ -1,3 +1,9 @@
+/*GENERAL*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
 /*NAVBAR*/
 body {
   color: #212121;
@@ -70,15 +76,12 @@ main.container.index {
       margin-top: 1rem; }
 
 /*GALERIA*/
-div.card {
-  background-color: #BDBDBD; }
-  div.card div.card-header {
-    font-family: "Josefin Sans", sans-serif;
-    color: #212121; }
-    div.card div.card-header button.btn {
-      font-size: 1.5rem; }
-      div.card div.card-header button.btn:hover {
-        color: #7C4DFF; }
+h1.galeria {
+  font-weight: 400;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 40px;
+  margin: 0; }
 
 /*TRABAJOS*/
 div.galeria {

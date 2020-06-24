@@ -1,5 +1,10 @@
 @import "variables.scss";
-
+/*GENERAL*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 /*NAVBAR*/
 body {
     color: $primaryText;
@@ -113,21 +118,12 @@ main.container.index{
 ;
 
 /*GALERIA*/
-div.card {
-    background-color: $dividerColor;
-
-    div.card-header {
-        font-family: $genericFont;
-        color: $primaryText;
-
-        button.btn {
-            font-size: 1.5rem;
-
-            &:hover {
-                color: $accentColor;
-            }
-        }
-    }
+h1.galeria{
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+    margin: 0;
 }
 
 /*TRABAJOS*/
