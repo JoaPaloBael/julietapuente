@@ -126,25 +126,34 @@ main.container.index {
 h1.headerLandscape {
     font-weight: 400;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0 0 0;
     font-size: 40px;
     margin: 0;
 }
 
-span.linea {
-    background: $accentColor;
-    height: 5px;
-    width: 100%;
-    display: block;
+h2#abrirMacroMenu.headerMacro {
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 0 0 0;
+    font-size: 40px;
+    margin: 0;
 }
 
-section.landscape {
+h2#abrirPortraitMenu.headerPortrait {
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 0 0 0;
+    font-size: 40px;
+    margin: 0;
+}
+
+section.tralala {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     width: 95%;
     margin: auto;
     grid-gap: 10px;
-    padding: 40px 0;
+    padding: 15px 0;
     overflow: hidden;
 
     a {

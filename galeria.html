@@ -33,8 +33,15 @@
 					<li class="nav-item">
 						<a class="nav-link" href="index.html">Home</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="galeria.html">Galería</a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="galeria.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Galería
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#abrirLandscapeMenu">Landscape</a>
+							<a class="dropdown-item" href="#abrirMacroMenu">Macro</a>
+							<a class="dropdown-item" href="#">Portrait</a>
+						</div>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="trabajos.html">Trabajos</a>
@@ -46,12 +53,9 @@
 			</div>
 		</nav>
 	</header>
-	<!-- GALERIA DE FOTOS -->
-
-	<h1 class="headerLandscape">Landscapes</h1>
-	<span class="linea"></span>
-
-	<section class="landscape">
+	<!-- LANDSCAPE -->
+	<h1 class="headerLandscape" id="abrirLandscapeMenu">LANDSCAPE</h1>
+	<section class="tralala">
 		<a href="#landscape1">
 			<img src="Contenido multimedia/landscape-1.jpg" alt="">
 		</a>
@@ -142,7 +146,7 @@
 			<i class="mdi mdi-arrow-left"></i>
 		</a>
 		<img src="Contenido multimedia/landscape-6.jpg" alt="">
-		<a href="#landscape1" class="next">
+		<a href="#abrirMacroMenu" class="next">
 			<i class="mdi mdi-arrow-right"></i>
 		</a>
 		<a href="#" class="close">
@@ -150,7 +154,208 @@
 		</a>
 	</article>
 
+<!-- MACRO -->
+	<h2 class="headerMacro" id="abrirMacroMenu">MACRO</h2>
+	<section class="tralala">
+		<a href="#macro1">
+			<img src="Contenido multimedia/macro-1.jpg" alt="">
+		</a>
+		<a href="#macro2">
+			<img src="Contenido multimedia/macro-2.jpg" alt="">
+		</a>
+		<a href="#macro3">
+			<img src="Contenido multimedia/macro-3.jpg" alt="">
+		</a>
+		<a href="#macro4">
+			<img src="Contenido multimedia/macro-4.jpg" alt="">
+		</a>
+		<a href="#lmacro">
+			<img src="Contenido multimedia/macro-5.jpg" alt="">
+		</a>
+		<a href="#macro6">
+			<img src="Contenido multimedia/macro-6.jpg" alt="">
+		</a>
+	</section>
 
+	<article class="light-box" id="macro1">
+		<a href="#macro6" class="next">
+			<i class="mdi mdi-arrow-left"></i>
+		</a>
+		<img src="Contenido multimedia/macro-1.jpg" alt="">
+		<a href="#macro2" class="next">
+			<i class="mdi mdi-arrow-right"></i>
+		</a>
+		<a href="#" class="close">
+			<i class="mdi mdi-close"></i>
+		</a>
+	</article>
+
+	<article class="light-box" id="macro2">
+		<a href="#macro1" class="next">
+			<i class="mdi mdi-arrow-left"></i>
+		</a>
+		<img src="Contenido multimedia/macro-2.jpg" alt="">
+		<a href="#macro3" class="next">
+			<i class="mdi mdi-arrow-right"></i>
+		</a>
+		<a href="#" class="close">
+			<i class="mdi mdi-close"></i>
+		</a>
+	</article>
+
+	<article class="light-box" id="macro3">
+		<a href="#macro2" class="next">
+			<i class="mdi mdi-arrow-left"></i>
+		</a>
+		<img src="Contenido multimedia/macro-3.jpg" alt="">
+		<a href="#macro4" class="next">
+			<i class="mdi mdi-arrow-right"></i>
+		</a>
+		<a href="#" class="close">
+			<i class="mdi mdi-close"></i>
+		</a>
+	</article>
+
+	<article class="light-box" id="macro4">
+		<a href="#macro3" class="next">
+			<i class="mdi mdi-arrow-left"></i>
+		</a>
+		<img src="Contenido multimedia/macro-4.jpg" alt="">
+		<a href="#macro5" class="next">
+			<i class="mdi mdi-arrow-right"></i>
+		</a>
+		<a href="#" class="close">
+			<i class="mdi mdi-close"></i>
+		</a>
+	</article>
+
+	<article class="light-box" id="macro5">
+		<a href="#macro4" class="next">
+			<i class="mdi mdi-arrow-left"></i>
+		</a>
+		<img src="Contenido multimedia/macro-5.jpg" alt="">
+		<a href="#macro6" class="next">
+			<i class="mdi mdi-arrow-right"></i>
+		</a>
+		<a href="#" class="close">
+			<i class="mdi mdi-close"></i>
+		</a>
+	</article>
+
+	<article class="light-box" id="macro6">
+		<a href="#macro5" class="next">
+			<i class="mdi mdi-arrow-left"></i>
+		</a>
+		<img src="Contenido multimedia/macro-6.jpg" alt="">
+		<a href="#macro1" class="next">
+			<i class="mdi mdi-arrow-right"></i>
+		</a>
+		<a href="#" class="close">
+			<i class="mdi mdi-close"></i>
+		</a>
+	</article>
+
+<!-- PORTRAIT -->
+
+<h2 class="headerPortrait" id="abrirPortraitMenu">PORTRAIT</h2>
+<section class="tralala">
+	<a href="#portrait1">
+		<img src="Contenido multimedia/macro-1.jpg" alt="">
+	</a>
+	<a href="#portrait2">
+		<img src="Contenido multimedia/portrait-2.jpg" alt="">
+	</a>
+	<a href="#portrait3">
+		<img src="Contenido multimedia/portrait-3.jpg" alt="">
+	</a>
+	<a href="#portrait4">
+		<img src="Contenido multimedia/portrait-4.jpg" alt="">
+	</a>
+	<a href="#portrait5">
+		<img src="Contenido multimedia/portrait-5.jpg" alt="">
+	</a>
+	<a href="#portrait6">
+		<img src="Contenido multimedia/portrait-6.jpg" alt="">
+	</a>
+</section>
+
+<article class="light-box" id="portrait1">
+	<a href="#portrait6" class="next">
+		<i class="mdi mdi-arrow-left"></i>
+	</a>
+	<img src="Contenido multimedia/portrait-1.jpg" alt="">
+	<a href="#portrait2" class="next">
+		<i class="mdi mdi-arrow-right"></i>
+	</a>
+	<a href="#" class="close">
+		<i class="mdi mdi-close"></i>
+	</a>
+</article>
+
+<article class="light-box" id="portrait2">
+	<a href="#portrait1" class="next">
+		<i class="mdi mdi-arrow-left"></i>
+	</a>
+	<img src="Contenido multimedia/portrait-2.jpg" alt="">
+	<a href="#portrait3" class="next">
+		<i class="mdi mdi-arrow-right"></i>
+	</a>
+	<a href="#" class="close">
+		<i class="mdi mdi-close"></i>
+	</a>
+</article>
+
+<article class="light-box" id="portrait3">
+	<a href="#portrait2" class="next">
+		<i class="mdi mdi-arrow-left"></i>
+	</a>
+	<img src="Contenido multimedia/portrait-3.jpg" alt="">
+	<a href="#portrait4" class="next">
+		<i class="mdi mdi-arrow-right"></i>
+	</a>
+	<a href="#" class="close">
+		<i class="mdi mdi-close"></i>
+	</a>
+</article>
+
+<article class="light-box" id="portrait4">
+	<a href="#portrait3" class="next">
+		<i class="mdi mdi-arrow-left"></i>
+	</a>
+	<img src="Contenido multimedia/portrait-4.jpg" alt="">
+	<a href="#portrait5" class="next">
+		<i class="mdi mdi-arrow-right"></i>
+	</a>
+	<a href="#" class="close">
+		<i class="mdi mdi-close"></i>
+	</a>
+</article>
+
+<article class="light-box" id="portrait5">
+	<a href="#portrait4" class="next">
+		<i class="mdi mdi-arrow-left"></i>
+	</a>
+	<img src="Contenido multimedia/portrait-5.jpg" alt="">
+	<a href="#portrait6" class="next">
+		<i class="mdi mdi-arrow-right"></i>
+	</a>
+	<a href="#" class="close">
+		<i class="mdi mdi-close"></i>
+	</a>
+</article>
+
+<article class="light-box" id="portrait6">
+	<a href="#portrait5" class="next">
+		<i class="mdi mdi-arrow-left"></i>
+	</a>
+	<img src="Contenido multimedia/portrait-6.jpg" alt="">
+	<a href="#abrirLandscapeMenu" class="next">
+		<i class="mdi mdi-arrow-right"></i>
+	</a>
+	<a href="#" class="close">
+		<i class="mdi mdi-close"></i>
+	</a>
+</article>
 
 	<!-- FOOTER -->
 	<footer class="container-fluid">
