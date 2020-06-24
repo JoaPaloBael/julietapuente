@@ -1,4 +1,4 @@
-/*INDEX*/
+/*NAVBAR*/
 body {
   color: #212121;
   background-color: #00BCD4;
@@ -27,26 +27,7 @@ body {
             font-size: 22px;
             color: #FFFFFF; }
 
-main.container {
-  background-color: #BDBDBD; }
-  main.container section.row div.informacion-portada {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    main.container section.row div.informacion-portada p {
-      color: #757575;
-      background-color: rgba(255, 255, 255, 0.5);
-      text-align: center;
-      box-shadow: 11.8px 1.1rem 1rem -8px; }
-    main.container section.row div.informacion-portada h2 {
-      background-color: rgba(255, 255, 255, 0.5);
-      text-align: center;
-      font-family: serif;
-      font-size: 35px;
-      color: #212121;
-      margin-bottom: 0;
-      margin-top: 1rem; }
-
+/*FOOTER*/
 footer {
   background-color: #0097A7;
   width: 100%; }
@@ -66,6 +47,27 @@ footer {
     padding: 10px 0 10px 0;
     margin: 0;
     width: 100%; }
+
+/*INDEX*/
+main.container.index {
+  background-color: #BDBDBD; }
+  main.container.index section.row div.informacion-portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    main.container.index section.row div.informacion-portada p {
+      color: #757575;
+      background-color: rgba(255, 255, 255, 0.5);
+      text-align: center;
+      box-shadow: 11.8px 1.1rem 1rem -8px; }
+    main.container.index section.row div.informacion-portada h2 {
+      background-color: rgba(255, 255, 255, 0.5);
+      text-align: center;
+      font-family: serif;
+      font-size: 35px;
+      color: #212121;
+      margin-bottom: 0;
+      margin-top: 1rem; }
 
 /*GALERIA*/
 div.card {
