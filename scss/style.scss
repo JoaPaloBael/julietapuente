@@ -1,6 +1,6 @@
 @import "variables.scss";
 
-/*INDEX*/
+/*NAVBAR*/
 body {
     color: $primaryText;
     background-color: $lightPrimaryColor;
@@ -50,35 +50,7 @@ body {
     }
 }
 
-main.container {
-    background-color: $dividerColor;
-
-    section.row {
-        div.informacion-portada {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            p {
-                color: $secondaryText;
-                background-color: rgba(255, 255, 255, 0.5);
-                text-align: center;
-                box-shadow: 11.8px 1.1rem 1rem -8px;
-            }
-
-            h2 {
-                background-color: rgba(255, 255, 255, 0.5);
-                text-align: center;
-                font-family: serif;
-                font-size: 35px;
-                color: $primaryText;
-                margin-bottom: 0;
-                margin-top: 1rem;
-            }
-        }
-    }
-}
-
+/*FOOTER*/
 footer {
     background-color: $primaryColor;
     width: 100%;
@@ -109,6 +81,34 @@ footer {
         width: 100%;
     }
 }
+
+/*INDEX*/
+main.container.index{
+    background-color: $dividerColor;
+    section.row {
+        div.informacion-portada {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            p {
+                color: $secondaryText;
+                background-color: rgba(255, 255, 255, 0.5);
+                text-align: center;
+                box-shadow: 11.8px 1.1rem 1rem -8px;
+            }
+            h2 {
+                background-color: rgba(255, 255, 255, 0.5);
+                text-align: center;
+                font-family: serif;
+                font-size: 35px;
+                color: $primaryText;
+                margin-bottom: 0;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
 
 ;
 
