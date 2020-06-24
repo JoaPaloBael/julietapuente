@@ -10,65 +10,147 @@
 		rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"">
     <link rel=" stylesheet" type="text/css" href="css/style.css">
-	<title>Porfolio fotográfico</title>
+	<title>Galería de imágenes</title>
 </head>
 
 <body>
-    <!-- HEADER -->
+	<!-- HEADER -->
 
-    <header class="container-fluid">
-        <nav class="navbar navbar-expand-md p-0">
-            <a class="navbar-brand" href="index.html">
-                <h1>Julieta Puente</h1>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon mdi mdi-light mdi-menu mdi-24px m-0">
-                </span>
-            </button>
+	<header class="container-fluid">
+		<nav class="navbar navbar-expand-md p-0">
+			<a class="navbar-brand" href="index.html">
+				<h1>Julieta Puente</h1>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon mdi mdi-light mdi-menu mdi-24px m-0">
+				</span>
+			</button>
 
-            <div class="collapse navbar-collapse justify-content-end align-items-center pr-3" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galeria.html">Galería</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="trabajos.html">Trabajos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-<!-- GALERIA DE FOTOS -->
+			<div class="collapse navbar-collapse justify-content-end align-items-center pr-3"
+				id="navbarSupportedContent">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="galeria.html">Galería</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="trabajos.html">Trabajos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contacto.html">Contacto</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<!-- GALERIA DE FOTOS -->
 
-<h1 class="galeria">Galería</h1>
-<span class="linea"></span>
-<section class="galeria">
-	<a href="" src="#image1">
-		<img src="Contenido multimedia/landscape-0.jpg" alt="">
-	</a>
-	<a href="" src="#image2">
+	<h1 class="headerLandscape">Landscapes</h1>
+	<span class="linea"></span>
+
+	<section class="landscape">
+		<a href="#landscape1">
+			<img src="Contenido multimedia/landscape-1.jpg" alt="">
+		</a>
+		<a href="#landscape2">
+			<img src="Contenido multimedia/landscape-2.jpg" alt="">
+		</a>
+		<a href="#landscape3">
+			<img src="Contenido multimedia/landscape-3.jpg" alt="">
+		</a>
+		<a href="#landscape4">
+			<img src="Contenido multimedia/landscape-4.jpg" alt="">
+		</a>
+		<a href="#landscape5">
+			<img src="Contenido multimedia/landscape-5.jpg" alt="">
+		</a>
+		<a href="#landscape6">
+			<img src="Contenido multimedia/landscape-6.jpg" alt="">
+		</a>
+	</section>
+
+	<article class="light-box" id="landscape1">
+		<a href="#landscape6" class="next">
+			<i class="mdi mdi-arrow-left"></i>
+		</a>
 		<img src="Contenido multimedia/landscape-1.jpg" alt="">
-	</a>
-	<a href="" src="#image3">
+		<a href="#landscape2" class="next">
+			<i class="mdi mdi-arrow-right"></i>
+		</a>
+		<a href="#" class="close">
+			<i class="mdi mdi-close"></i>
+		</a>
+	</article>
+
+	<article class="light-box" id="landscape2">
+		<a href="#landscape1" class="next">
+			<i class="mdi mdi-arrow-left"></i>
+		</a>
 		<img src="Contenido multimedia/landscape-2.jpg" alt="">
-	</a>
-	<a href="" src="#image4">
+		<a href="#landscape3" class="next">
+			<i class="mdi mdi-arrow-right"></i>
+		</a>
+		<a href="#" class="close">
+			<i class="mdi mdi-close"></i>
+		</a>
+	</article>
+
+	<article class="light-box" id="landscape3">
+		<a href="#landscape2" class="next">
+			<i class="mdi mdi-arrow-left"></i>
+		</a>
 		<img src="Contenido multimedia/landscape-3.jpg" alt="">
-	</a>
-	<a href="" src="#image5">
+		<a href="#landscape4" class="next">
+			<i class="mdi mdi-arrow-right"></i>
+		</a>
+		<a href="#" class="close">
+			<i class="mdi mdi-close"></i>
+		</a>
+	</article>
+
+	<article class="light-box" id="landscape4">
+		<a href="#landscape3" class="next">
+			<i class="mdi mdi-arrow-left"></i>
+		</a>
 		<img src="Contenido multimedia/landscape-4.jpg" alt="">
-	</a>
-	<a href="" src="#image6">
+		<a href="#landscape5" class="next">
+			<i class="mdi mdi-arrow-right"></i>
+		</a>
+		<a href="#" class="close">
+			<i class="mdi mdi-close"></i>
+		</a>
+	</article>
+
+	<article class="light-box" id="landscape5">
+		<a href="#landscape4" class="next">
+			<i class="mdi mdi-arrow-left"></i>
+		</a>
 		<img src="Contenido multimedia/landscape-5.jpg" alt="">
-	</a>
-</section>
+		<a href="#landscape6" class="next">
+			<i class="mdi mdi-arrow-right"></i>
+		</a>
+		<a href="#" class="close">
+			<i class="mdi mdi-close"></i>
+		</a>
+	</article>
+
+	<article class="light-box" id="landscape6">
+		<a href="#landscape5" class="next">
+			<i class="mdi mdi-arrow-left"></i>
+		</a>
+		<img src="Contenido multimedia/landscape-6.jpg" alt="">
+		<a href="#landscape1" class="next">
+			<i class="mdi mdi-arrow-right"></i>
+		</a>
+		<a href="#" class="close">
+			<i class="mdi mdi-close"></i>
+		</a>
+	</article>
+
+
 
 	<!-- FOOTER -->
 	<footer class="container-fluid">

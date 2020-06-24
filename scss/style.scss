@@ -1,10 +1,12 @@
 @import "variables.scss";
+
 /*GENERAL*/
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 /*NAVBAR*/
 body {
     color: $primaryText;
@@ -88,19 +90,22 @@ footer {
 }
 
 /*INDEX*/
-main.container.index{
+main.container.index {
     background-color: $dividerColor;
+
     section.row {
         div.informacion-portada {
             display: flex;
             flex-direction: column;
             justify-content: center;
+
             p {
                 color: $secondaryText;
                 background-color: rgba(255, 255, 255, 0.5);
                 text-align: center;
                 box-shadow: 11.8px 1.1rem 1rem -8px;
             }
+
             h2 {
                 background-color: rgba(255, 255, 255, 0.5);
                 text-align: center;
@@ -118,12 +123,94 @@ main.container.index{
 ;
 
 /*GALERIA*/
-h1.galeria{
+h1.headerLandscape {
     font-weight: 400;
     text-align: center;
     padding: 20px 0;
     font-size: 40px;
     margin: 0;
+}
+
+span.linea {
+    background: $accentColor;
+    height: 5px;
+    width: 100%;
+    display: block;
+}
+
+section.landscape {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+
+    a {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 6px rgba($color: black, $alpha: 0.5);
+
+        &:hover {
+            filter: blur(1.5px);
+        }
+
+        img {
+            width: 100%;
+            vertical-align: top;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+}
+
+article.light-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba($color: black, $alpha: 0.8);
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: scale(0);
+
+
+
+    &:target {
+        transform: scale(1);
+    }
+
+    a.close {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        color: $white;
+        text-align: center;
+    }
+
+    a.next {
+        display: block;
+        color: $white;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        text-decoration: none;
+        text-align: center;
+
+    }
+
+    img {
+        max-height: 90vh;
+        max-width: 85vw;
+    }
+
 }
 
 /*TRABAJOS*/
@@ -161,11 +248,20 @@ div.formulario {
     h1 {
         display: none;
     }
-
+    section.landscape{
+        grid-template-columns: repeat(auto-fit, minmax (200px, 1fr ));
+    }
+    article.light-box{
+        a.close{
+            top: 120px;
+            right: 15px;
+        }
+    }
 }
 
 @media (min-width: 576px) and (max-width:767px) {
-    // SM
+// SM
+
 }
 
 @media (min-width: 768px) and (max-width:991px) {
