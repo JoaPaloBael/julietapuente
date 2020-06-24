@@ -1,4 +1,3 @@
-
 @import "variables.scss";
 
 /*INDEX*/
@@ -7,114 +6,125 @@ body {
     background-color: $lightPrimaryColor;
     font-family: $genericFont;
 
-    header{
+    header {
         background-color: $darkPrimaryColor;
         width: 100%;
 
         nav {
             a {
-                padding: 12px;
-                text-decoration: none;
-                font-size: 20px;
-                color: $lightSecondaryColor;
-                justify-content: flex-end;
-
-                &:hover {
-                    text-decoration: underline;
-                    color: $white;
-                }
-
                 h1 {
                     font-family: $headerFont;
                     color: $white;
                     font-size: 40px;
                     justify-content: flex-start;
                     margin: 0;
-                }
-            }
-
-            div {
-                display: block;
-                flex-direction: row;
-                justify-content: right;
-                ul{
-                    justify-content: center;
-                }
-            }
-        }
-    }
-
-    main.container {
-        background-color: $dividerColor;
-
-        section.row {
-            div.informacion-portada {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-
-                p {
-                    color: $secondaryText;
-                    background-color: rgba(255, 255, 255, 0.5);
-                    text-align: center;
-                    box-shadow: 11.8px 1.1rem 1rem -8px;
-                }
-
-                h2 {
-                    background-color: rgba(255, 255, 255, 0.5);
-                    text-align: center;
-                    font-family: serif;
-                    font-size: 35px;
-                    color: $primaryText;
-                    margin-bottom: 0;
-                    margin-top: 1rem;
-                }
-            }
-        }
-    }
-
-    footer {
-        background-color: $primaryColor;
-        width: 100%;
-
-        div.links-redes {
-            display: flex;
-            justify-content: center;
-
-            a {
-                i.mdi {
-                    font-size: 30px;
-                    margin: 2px 20px 2px 20px;
-                    color: $lightSecondaryColor;
 
                     &:hover {
-                        color:$white;
+                        color: $lightSecondaryColor;
                     }
                 }
             }
         }
 
-        p {
-            text-align: center;
-            background-color:$darkPrimaryColor ;
-            color: $white;
-            padding: 10px 0 10px 0;
-            margin: 0;
-            width: 100%;
+        div {
+            display: block;
+            flex-direction: row;
+            justify-content: right;
+
+            ul {
+                justify-content: center;
+
+                li.nav-item {
+                    a.nav-link {
+                        font-size: 20px;
+                        color: $lightSecondaryColor;
+
+                        &:hover {
+                            font-size: 22px;
+                            color: $white;
+                        }
+                    }
+                }
+            }
         }
     }
-};
+}
+
+main.container {
+    background-color: $dividerColor;
+
+    section.row {
+        div.informacion-portada {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            p {
+                color: $secondaryText;
+                background-color: rgba(255, 255, 255, 0.5);
+                text-align: center;
+                box-shadow: 11.8px 1.1rem 1rem -8px;
+            }
+
+            h2 {
+                background-color: rgba(255, 255, 255, 0.5);
+                text-align: center;
+                font-family: serif;
+                font-size: 35px;
+                color: $primaryText;
+                margin-bottom: 0;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $primaryColor;
+    width: 100%;
+
+    div.links-redes {
+        display: flex;
+        justify-content: center;
+
+        a {
+            i.mdi {
+                font-size: 30px;
+                margin: 2px 20px 2px 20px;
+                color: $lightSecondaryColor;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    p {
+        text-align: center;
+        background-color: $darkPrimaryColor;
+        color: $white;
+        padding: 10px 0 10px 0;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+;
 
 /*GALERIA*/
-div.card{
+div.card {
     background-color: $dividerColor;
-    div.card-header{
+
+    div.card-header {
         font-family: $genericFont;
         color: $primaryText;
-        button.btn{
+
+        button.btn {
             font-size: 1.5rem;
-            &:hover{
-                color:$accentColor;
+
+            &:hover {
+                color: $accentColor;
             }
         }
     }
@@ -122,11 +132,13 @@ div.card{
 
 /*TRABAJOS*/
 
-div.galeria{
+div.galeria {
     background-color: $primaryColor;
+
     section.trabajos {
-        div{
+        div {
             justify-content: center;
+
             video {
                 max-width: 450px;
             }
@@ -148,8 +160,9 @@ div.formulario {
 /*RESPONSIVE*/
 
 @media (max-width: 421px) {
+
     // XS
-    h1{
+    h1 {
         display: none;
     }
 
