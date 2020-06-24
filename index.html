@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Porfolio Fotografico de Julieta Puente">
-        <meta name="keywords" content="Porfolio, fotografia, fotografo, landscape, portrait, macro, ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Porfolio Fotografico de Julieta Puente">
+    <meta name="keywords" content="Porfolio, fotografia, fotografo, landscape, portrait, macro, ">
 
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.2.45/css/materialdesignicons.min.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Yeseva+One&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.2.45/css/materialdesignicons.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"">
         <link rel=" stylesheet" type="text/css" href="css/style.css">
 
-        <title>Porfolio fotográfico</title>
-    </head>
+    <title>Porfolio fotográfico</title>
+</head>
 
 <body>
     <!-- HEADER -->
@@ -31,13 +31,22 @@
                 </span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-end align-items-center pr-3" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-end align-items-center pr-3"
+                id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galeria.html">Galería</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="galeria.html" id="navbarDropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Galería
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="galeria.html#abrirLandscapeMenu">Landscape</a>
+                            <a class="dropdown-item" href="galeria.html#abrirMacroMenu">Macro</a>
+                            <a class="dropdown-item" href="galeria.html#abrirPortraitMenu">Portrait</a>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="trabajos.html">Trabajos</a>
@@ -49,7 +58,6 @@
             </div>
         </nav>
     </header>
-
     <!-- CONTENIDO PRINCIPAL -->
     <main class="container index">
         <section class="row">
