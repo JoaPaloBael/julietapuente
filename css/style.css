@@ -153,8 +153,15 @@ article.light-box {
     max-width: 85vw; }
 
 /*TRABAJOS*/
+h1.headerTrabajos {
+  font-weight: 400;
+  text-align: center;
+  padding: 10px 0 0 0;
+  font-size: 40px;
+  margin: 0; }
+
 div.galeria {
-  background-color: #0097A7; }
+  background-color: #BDBDBD; }
   div.galeria section.trabajos div {
     justify-content: center; }
     div.galeria section.trabajos div video {

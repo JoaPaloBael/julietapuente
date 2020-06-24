@@ -224,8 +224,16 @@ article.light-box {
 
 /*TRABAJOS*/
 
+h1.headerTrabajos{
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 0 0 0;
+    font-size: 40px;
+    margin: 0;
+}
+
 div.galeria {
-    background-color: $primaryColor;
+    background-color: $dividerColor;
 
     section.trabajos {
         div {
