@@ -168,10 +168,42 @@ div.galeria {
       max-width: 450px; }
 
 /*CONTACTO*/
-div.formulario {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+div.bodyFormulario {
+  background-size: 100vw 100vh;
+  margin: 0; }
+  div.bodyFormulario h1 {
+    display: none; }
+  div.bodyFormulario form {
+    width: 450px;
+    margin: auto;
+    background: rgba(189, 189, 189, 0.5);
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 7px; }
+    div.bodyFormulario form h2 {
+      color: #212121;
+      text-align: center;
+      margin: 0;
+      font-size: 30px;
+      margin-bottom: 20px; }
+    div.bodyFormulario form input, div.bodyFormulario form textarea {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 7px;
+      font-size: 17px;
+      border: none; }
+    div.bodyFormulario form textarea {
+      min-height: 100px;
+      max-height: 200px;
+      max-width: 100%; }
+    div.bodyFormulario form input#boton {
+      background-color: #374046;
+      color: #FFFFFF; }
+      div.bodyFormulario form input#boton:hover {
+        background-color: #6f818d;
+        cursor: pointer;
+        color: #212121; }
 
 /*RESPONSIVE*/
 @media (max-width: 421px) {
@@ -181,4 +213,6 @@ div.formulario {
     grid-template-columns: repeat(auto-fit, minmax 200px, 1fr); }
   article.light-box a.close {
     top: 120px;
-    right: 15px; } }
+    right: 15px; }
+  form {
+    width: 100%; } }

@@ -10,12 +10,11 @@
 		rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"">
     <link rel=" stylesheet" type="text/css" href="css/style.css">
-	<title>Porfolio fotográfico</title>
+	<title>Contactame</title>
 </head>
 
 <body>
 	<!-- HEADER -->
-
 	<header class="container-fluid">
 		<nav class="navbar navbar-expand-md p-0">
 			<a class="navbar-brand" href="index.html">
@@ -54,70 +53,20 @@
 			</div>
 		</nav>
 	</header>
-	<!-- CONTENIDO PRINCIPAL -->
 
 	<!-- FORMULARIO -->
-	<div class="container formulario">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="well well-sm">
-					<form class="form-horizontal" method="GET">
-						<fieldset>
-							<legend class="text-center header">Contactame</legend>
-
-							<div class="form-group">
-								<span class="col-md-1 col-md-offset-2 text-center"><i class="mdi mdi-account"></i>
-									Nombre y apellido</span>
-								<div class="col-md-8">
-									<input id="fname" name="name" type="text" placeholder="Pipi Puente"
-										class="form-control">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<span class="col-md-1 col-md-offset-2 text-center"><i
-										class="mdi mdi-email"></i>Email</span>
-								<div class="col-md-8">
-									<input id="email" name="email" type="mail" placeholder="pipi@elmaslindo.com"
-										required class="form-control">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<span class="col-md-1 col-md-offset-2 text-center"><i
-										class="mdi mdi-cellphone"></i>Celular</span>
-								<div class="col-md-8">
-									<input id="phone" name="phone" type="text" placeholder="0303456" required
-										class="form-control">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<span class="col-md-1 col-md-offset-2 text-center"><i
-										class="mdi mdi-card-text-outline"></i>Consulta</span>
-								<div class="col-md-8">
-									<textarea class="form-control" id="message" name="message"
-										placeholder="Escriba aquí su consulta :)" rows="8"></textarea>
-								</div>
-							</div>
-
-							<div class="form-group">
-								<div class="col-md-12 text-center">
-									<button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-								</div>
-							</div>
-
-							<div>
-								<input type="reset" name="resetear" id="borrar" value="Volver a empezar"><label
-									for="borrar"></label>
-							</div>
-						</fieldset>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-
+<div class="bodyFormulario">
+	<h1>Formulario de contacto</h1>
+	<form method="GET" action="">
+		<h2>Contacto</h2>
+		<input type="text" name="nombre" placeholder="Pipi Puente">
+		<input type="text" name="correo" placeholder="Pipi@elmaslindo.com">
+		<input type="text" name="telefono" placeholder="0303456">
+		<textarea name="mensaje" placeholder="Escriba su consulta" id="" cols="30" rows="10">
+		</textarea>
+		<input type="submit" value="Enviar" name="" id="boton">
+	</form>
+</div>
 	<!-- FOOTER -->
 	<footer class="container-fluid">
 		<div class="links-redes row">
