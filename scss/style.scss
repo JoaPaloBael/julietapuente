@@ -1,11 +1,16 @@
-@import "variables" , "../css/reset.css";
+@import "variables";
 
 // NAVBAR
 
 body {
-    color: $primaryText;
-    background-color: $lightPrimaryColor;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
     font-family: $genericFont;
+    background-color: $dividerColor;
+    color: $primaryText;
 
     header {
         background-color: $darkPrimaryColor;
@@ -27,7 +32,7 @@ body {
             }
         }
 
-        div {
+        div.la-barra {
             display: block;
             flex-direction: row;
             justify-content: right;
@@ -55,6 +60,9 @@ body {
 footer {
     background-color: $primaryColor;
     width: 100%;
+    position: fixed;
+    bottom: 0;
+
 
     div.links-redes {
         display: flex;
@@ -84,37 +92,42 @@ footer {
 }
 
 /*INDEX*/
-main.container.index {
-    background-color: $dividerColor;
 
-    section.row {
-        div.informacion-portada {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+body.index{
+    background-image: url("../Contenido multimedia/foto-faro-portada.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    &::before{
+        content: "";
+        width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
 
-            p {
-                color: $secondaryText;
-                background-color: rgba(255, 255, 255, 0.5);
-                text-align: center;
-                box-shadow: 11.8px 1.1rem 1rem -8px;
-            }
+        background: black;
+        opacity: 0.4;
+        z-index: -1;
+    }
 
-            h2 {
-                background-color: rgba(255, 255, 255, 0.5);
-                text-align: center;
-                font-family: serif;
-                font-size: 35px;
-                color: $primaryText;
-                margin-bottom: 0;
-                margin-top: 1rem;
+    main.index{
+        display: flex;
+        height: 100vh;
+        overflow: hidden;
+        justify-content: center;
+        align-items: flex-start;
+
+        div{
+            h2,p{
+                color: white;
+                font-family: helvetica;
             }
         }
     }
 }
 
-
-;
 
 /*GALERIA*/
 h1#abrirLandscapeMenu.headerLandscape {

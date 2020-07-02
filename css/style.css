@@ -1,8 +1,12 @@
-@import url(../css/reset.css);
 body {
-  color: #212121;
-  background-color: #00BCD4;
-  font-family: "Josefin Sans", sans-serif; }
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #BDBDBD;
+  color: #212121; }
   body header {
     background-color: #374046;
     width: 100%; }
@@ -14,23 +18,25 @@ body {
       margin: 0; }
       body header nav a h1:hover {
         color: #B2EBF2; }
-    body header div {
+    body header div.la-barra {
       display: block;
       flex-direction: row;
       justify-content: right; }
-      body header div ul {
+      body header div.la-barra ul {
         justify-content: center; }
-        body header div ul li.nav-item a.nav-link {
+        body header div.la-barra ul li.nav-item a.nav-link {
           font-size: 20px;
           color: #B2EBF2; }
-          body header div ul li.nav-item a.nav-link:hover {
+          body header div.la-barra ul li.nav-item a.nav-link:hover {
             font-size: 22px;
             color: #FFFFFF; }
 
 /*FOOTER*/
 footer {
   background-color: #0097A7;
-  width: 100%; }
+  width: 100%;
+  position: fixed;
+  bottom: 0; }
   footer div.links-redes {
     display: flex;
     justify-content: center; }
@@ -49,25 +55,31 @@ footer {
     width: 100%; }
 
 /*INDEX*/
-main.container.index {
-  background-color: #BDBDBD; }
-  main.container.index section.row div.informacion-portada {
+body.index {
+  background-image: url("../Contenido multimedia/foto-faro-portada.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+  body.index::before {
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: 0.4;
+    z-index: -1; }
+  body.index main.index {
     display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    main.container.index section.row div.informacion-portada p {
-      color: #757575;
-      background-color: rgba(255, 255, 255, 0.5);
-      text-align: center;
-      box-shadow: 11.8px 1.1rem 1rem -8px; }
-    main.container.index section.row div.informacion-portada h2 {
-      background-color: rgba(255, 255, 255, 0.5);
-      text-align: center;
-      font-family: serif;
-      font-size: 35px;
-      color: #212121;
-      margin-bottom: 0;
-      margin-top: 1rem; }
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+    align-items: flex-start; }
+    body.index main.index div h2, body.index main.index div p {
+      color: white;
+      font-family: helvetica; }
 
 /*GALERIA*/
 h1#abrirLandscapeMenu.headerLandscape {
