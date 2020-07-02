@@ -1,10 +1,4 @@
-/*GENERAL*/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
-/*NAVBAR*/
+@import url(../css/reset.css);
 body {
   color: #212121;
   background-color: #00BCD4;
@@ -187,7 +181,8 @@ div.bodyFormulario {
       margin: 0;
       font-size: 30px;
       margin-bottom: 20px; }
-    div.bodyFormulario form input, div.bodyFormulario form textarea {
+    div.bodyFormulario form input,
+    div.bodyFormulario form textarea {
       width: 100%;
       margin-bottom: 20px;
       padding: 7px;
