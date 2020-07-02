@@ -32,7 +32,7 @@ body {
             }
         }
 
-        div.la-barra {
+        div{
             display: block;
             flex-direction: row;
             justify-content: right;
@@ -58,16 +58,12 @@ body {
 
 /*FOOTER*/
 footer {
-    background-color: $primaryColor;
     width: 100%;
     position: fixed;
     bottom: 0;
-
-
-    div.links-redes {
+    div{
         display: flex;
         justify-content: center;
-
         a {
             i.mdi {
                 font-size: 30px;
