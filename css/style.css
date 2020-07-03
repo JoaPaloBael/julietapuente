@@ -18,45 +18,48 @@ body {
       margin: 0; }
       body header nav a h1:hover {
         color: #B2EBF2; }
-    body header div.la-barra {
+    body header div {
       display: block;
       flex-direction: row;
       justify-content: right; }
-      body header div.la-barra ul {
+      body header div ul {
         justify-content: center; }
-        body header div.la-barra ul li.nav-item a.nav-link {
+        body header div ul li.nav-item a.nav-link {
           font-size: 20px;
           color: #B2EBF2; }
-          body header div.la-barra ul li.nav-item a.nav-link:hover {
+          body header div ul li.nav-item a.nav-link:hover {
             font-size: 22px;
             color: #FFFFFF; }
 
 /*FOOTER*/
 footer {
-  background-color: #0097A7;
   width: 100%;
+  margin: 0;
   position: fixed;
-  bottom: 0; }
-  footer div.links-redes {
-    display: flex;
-    justify-content: center; }
-    footer div.links-redes a i.mdi {
-      font-size: 30px;
-      margin: 2px 20px 2px 20px;
-      color: #B2EBF2; }
-      footer div.links-redes a i.mdi:hover {
-        color: #FFFFFF; }
-  footer p {
-    text-align: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  footer div {
     background-color: #374046;
-    color: #FFFFFF;
-    padding: 10px 0 10px 0;
-    margin: 0;
-    width: 100%; }
+    border-radius: 10px 10px 0px 0px; }
+    footer div a i.mdi {
+      font-size: 20px;
+      margin: 0px 10px 2px 10px;
+      color: #FFFFFF; }
+      footer div a i.mdi:hover {
+        color: #B2EBF2; }
+    footer div p {
+      font-size: 12px;
+      text-align: center;
+      color: #B2EBF2;
+      margin: 0px 10px 0px 10px;
+      margin-bottom: 0;
+      width: 100%; }
 
 /*INDEX*/
 body.index {
-  background-image: url("../Contenido multimedia/foto-faro-portada.jpg");
+  background-image: url("../contenido_multimedia/homepage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -69,15 +72,16 @@ body.index {
     top: 0;
     left: 0;
     background: black;
-    opacity: 0.4;
+    opacity: 0.6;
     z-index: -1; }
   body.index main.index {
     display: flex;
-    height: 100vh;
+    height: 85vh;
     overflow: hidden;
     justify-content: center;
-    align-items: flex-start; }
-    body.index main.index div h2, body.index main.index div p {
+    align-items: center; }
+    body.index main.index div h2,
+    body.index main.index div p {
       color: white;
       font-family: helvetica; }
 

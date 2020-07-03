@@ -32,7 +32,7 @@ body {
             }
         }
 
-        div{
+        div {
             display: block;
             flex-direction: row;
             justify-content: right;
@@ -59,64 +59,71 @@ body {
 /*FOOTER*/
 footer {
     width: 100%;
+    margin: 0;
     position: fixed;
     bottom: 0;
-    div{
-        display: flex;
-        justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        background-color: $darkPrimaryColor;
+        border-radius: 10px 10px 0px 0px;
         a {
             i.mdi {
-                font-size: 30px;
-                margin: 2px 20px 2px 20px;
-                color: $lightSecondaryColor;
+                font-size: 20px;
+                margin: 0px 10px 2px 10px;
+                color: $white;
 
                 &:hover {
-                    color: $white;
+                    color: $lightSecondaryColor;
                 }
             }
         }
-    }
 
-    p {
-        text-align: center;
-        background-color: $darkPrimaryColor;
-        color: $white;
-        padding: 10px 0 10px 0;
-        margin: 0;
-        width: 100%;
+        p {
+            font-size: 12px;
+            text-align: center;
+            color: $lightSecondaryColor;
+            margin: 0px 10px 0px 10px;
+            margin-bottom: 0;
+            width: 100%;
+        }
     }
 }
 
 /*INDEX*/
 
-body.index{
-    background-image: url("../Contenido multimedia/foto-faro-portada.jpg");
+body.index {
+    background-image: url("../contenido_multimedia/homepage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    &::before{
+
+    &::before {
         content: "";
         width: 100%;
         min-height: 100vh;
         position: absolute;
         top: 0;
         left: 0;
-
         background: black;
-        opacity: 0.4;
+        opacity: 0.6;
         z-index: -1;
     }
 
-    main.index{
+    main.index {
         display: flex;
-        height: 100vh;
+        height: 85vh;
         overflow: hidden;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
 
-        div{
-            h2,p{
+        div {
+
+            h2,
+            p {
                 color: white;
                 font-family: helvetica;
             }
