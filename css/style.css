@@ -37,17 +37,20 @@ footer {
   bottom: 0;
   display: flex;
   justify-content: center;
-  align-items: center; }
-  footer div {
-    background-color: #374046;
+  align-items: center;
+  background-color: rgba(55, 64, 70, 0.8); }
+  footer div.footer {
+    position: relative;
     border-radius: 10px 10px 0px 0px; }
-    footer div a i.mdi {
+    footer div.footer a:hover {
+      text-decoration: none; }
+    footer div.footer a i.mdi {
       font-size: 20px;
       margin: 0px 10px 2px 10px;
       color: #FFFFFF; }
-      footer div a i.mdi:hover {
+      footer div.footer a i.mdi:hover {
         color: #B2EBF2; }
-    footer div p {
+    footer div.footer p {
       font-size: 12px;
       text-align: center;
       color: #B2EBF2;
@@ -74,14 +77,25 @@ body.index {
     z-index: -1; }
   body.index main.index {
     display: flex;
-    height: 85vh;
+    height: 83.2vh;
     overflow: hidden;
-    justify-content: center;
-    align-items: center; }
+    justify-content: flex-end;
+    align-items: center;
+    background: rgba(55, 64, 70, 0.5); }
     body.index main.index div h2,
     body.index main.index div p {
+      font-family: helvetica;
       color: white;
-      font-family: helvetica; }
+      display: flex;
+      justify-content: flex-end; }
+    body.index main.index div h2 {
+      font-size: 4rem; }
+      body.index main.index div h2 strong {
+        margin-left: 15px; }
+    body.index main.index div p {
+      text-align: right;
+      margin: 0;
+      width: 410px; }
 
 /*GALERIA*/
 h1#abrirLandscapeMenu.headerLandscape {
@@ -216,8 +230,10 @@ div.bodyFormulario {
 
 /*RESPONSIVE*/
 @media (max-width: 421px) {
-  h1 {
+  body.index main.index div p {
     display: none; }
+  body.index main.index div h2 {
+    font-size: 45px; }
   section.landscape {
     grid-template-columns: repeat(auto-fit, minmax 200px, 1fr); }
   article.light-box a.close {
@@ -225,3 +241,10 @@ div.bodyFormulario {
     right: 15px; }
   form {
     width: 100%; } }
+
+@media (min-width: 422px) and (max-width: 767px) {
+  body.index main.index div p {
+    text-align: center;
+    margin: 0; }
+  body.index main.index div h2 {
+    font-size: 4rem; } }
