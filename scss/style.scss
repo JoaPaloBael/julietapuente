@@ -18,37 +18,32 @@ body {
 
         nav {
             a {
-                h1 {
-                    font-family: $headerFont;
-                    color: $white;
-                    font-size: 40px;
-                    justify-content: flex-start;
-                    margin: 0;
-
-                    &:hover {
-                        color: $lightSecondaryColor;
-                    }
+                height: 9vh;
+                img{
+                    height: 9vh;
                 }
             }
         }
+    }
 
-        div {
-            display: block;
-            flex-direction: row;
-            justify-content: right;
+    div {
+        display: block;
+        flex-direction: row;
+        justify-content: right;
 
-            ul {
-                justify-content: center;
+        ul {
+            justify-content: center;
 
-                li.nav-item {
-                    a.nav-link {
-                        font-size: 20px;
-                        color: $lightSecondaryColor;
+            li.nav-item {
+                a.nav-link {
+                    display: flex;
+                    align-items: center;
+                    font-size: 20px;
+                    color: $lightSecondaryColor;
 
-                        &:hover {
-                            font-size: 22px;
-                            color: $white;
-                        }
+                    &:hover {
+                        font-size: 22px;
+                        color: $white;
                     }
                 }
             }
@@ -69,6 +64,7 @@ footer {
     div {
         background-color: $darkPrimaryColor;
         border-radius: 10px 10px 0px 0px;
+
         a {
             i.mdi {
                 font-size: 20px;

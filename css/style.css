@@ -10,26 +10,24 @@ body {
   body header {
     background-color: #374046;
     width: 100%; }
-    body header nav a h1 {
-      font-family: "Yeseva One", cursive;
-      color: #FFFFFF;
-      font-size: 40px;
-      justify-content: flex-start;
-      margin: 0; }
-      body header nav a h1:hover {
+    body header nav a {
+      height: 9vh; }
+      body header nav a img {
+        height: 9vh; }
+  body div {
+    display: block;
+    flex-direction: row;
+    justify-content: right; }
+    body div ul {
+      justify-content: center; }
+      body div ul li.nav-item a.nav-link {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
         color: #B2EBF2; }
-    body header div {
-      display: block;
-      flex-direction: row;
-      justify-content: right; }
-      body header div ul {
-        justify-content: center; }
-        body header div ul li.nav-item a.nav-link {
-          font-size: 20px;
-          color: #B2EBF2; }
-          body header div ul li.nav-item a.nav-link:hover {
-            font-size: 22px;
-            color: #FFFFFF; }
+        body div ul li.nav-item a.nav-link:hover {
+          font-size: 22px;
+          color: #FFFFFF; }
 
 /*FOOTER*/
 footer {
