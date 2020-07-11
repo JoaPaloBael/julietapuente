@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8">
@@ -16,351 +16,339 @@
 <body>
 	<!-- HEADER -->
 
-	<header class="container-fluid">
-		<nav class="navbar navbar-expand-md p-0">
-			<a class="navbar-brand" href="index.html">
-				<h1>Julieta Puente</h1>
+	<header class="encabezado">
+		<div class="contenedor-encabezado">
+			<a href="#">
+				<img src="contenido_multimedia/logo_julieta-puente.png" alt="">
 			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon mdi mdi-light mdi-menu mdi-24px m-0">
-				</span>
-			</button>
 
-			<div class="collapse navbar-collapse justify-content-end align-items-center pr-3"
-				id="navbarSupportedContent">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Home</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="galeria.html" id="navbarDropdownMenuLink"
-							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Galería
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="#abrirLandscapeMenu">Landscape</a>
-							<a class="dropdown-item" href="#abrirMacroMenu">Macro</a>
-							<a class="dropdown-item" href="#abrirPortraitMenu">Portrait</a>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="trabajos.html">Trabajos</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contacto.html">Contacto</a>
-					</li>
+			<nav class="navegacion">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="galeria.html">Galeria</a></li>
+					<li><a href="trabajos.html">Clientes</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
 				</ul>
-			</div>
-		</nav>
+			</nav>
+		</div>
+
 	</header>
+
 	<!-- LANDSCAPE -->
-	<h1 class="headerLandscape" id="abrirLandscapeMenu">LANDSCAPE</h1>
-	<section class="tralala">
-		<a href="#landscape1">
-			<img src="Contenido multimedia/landscape-1.jpg" alt="">
-		</a>
-		<a href="#landscape2">
-			<img src="Contenido multimedia/landscape-2.jpg" alt="">
-		</a>
-		<a href="#landscape3">
-			<img src="Contenido multimedia/landscape-3.jpg" alt="">
-		</a>
-		<a href="#landscape4">
-			<img src="Contenido multimedia/landscape-4.jpg" alt="">
-		</a>
-		<a href="#landscape5">
-			<img src="Contenido multimedia/landscape-5.jpg" alt="">
-		</a>
-		<a href="#landscape6">
-			<img src="Contenido multimedia/landscape-6.jpg" alt="">
-		</a>
-	</section>
+	<main>
+		<h1 class="headerLandscape" id="abrirLandscapeMenu">LANDSCAPE</h1>
+		<!-- Aca van las fotos -->
+		<section class="tralala">
+			<a href="#landscape1">
+				<img src="Contenido_multimedia/landscape-1.jpg" alt="">
+			</a>
+			<a href="#landscape2">
+				<img src="Contenido_multimedia/landscape-2.jpg" alt="">
+			</a>
+			<a href="#landscape3">
+				<img src="Contenido_multimedia/landscape-3.jpg" alt="">
+			</a>
+			<a href="#landscape4">
+				<img src="contenido_multimedia/landscape-4.jpg" alt="">
+			</a>
+			<a href="#landscape5">
+				<img src="contenido_multimedia/landscape-5.jpg" alt="">
+			</a>
+			<a href="#landscape6">
+				<img src="contenido_multimedia/landscape-6.jpg" alt="">
+			</a>
+		</section>
+		<!-- Aca va la configuracion de las flechas -->
+		<article class="light-box" id="landscape1">
+			<a href="#landscape6" class="next">
+				<i class="mdi mdi-arrow-left"></i>
+			</a>
+			<img src="contenido_multimedia/landscape-1.jpg" alt="">
+			<a href="#landscape2" class="next">
+				<i class="mdi mdi-arrow-right"></i>
+			</a>
+			<a href="#abrirLandscapeMenu" class="close">
+				<i class="mdi mdi-close"></i>
+			</a>
+		</article>
 
-	<article class="light-box" id="landscape1">
-		<a href="#landscape6" class="next">
-			<i class="mdi mdi-arrow-left"></i>
-		</a>
-		<img src="Contenido multimedia/landscape-1.jpg" alt="">
-		<a href="#landscape2" class="next">
-			<i class="mdi mdi-arrow-right"></i>
-		</a>
-		<a href="#abrirLandscapeMenu" class="close">
-			<i class="mdi mdi-close"></i>
-		</a>
-	</article>
+		<article class="light-box" id="landscape2">
+			<a href="#landscape1" class="next">
+				<i class="mdi mdi-arrow-left"></i>
+			</a>
+			<img src="contenido_multimedia/landscape-2.jpg" alt="">
+			<a href="#landscape3" class="next">
+				<i class="mdi mdi-arrow-right"></i>
+			</a>
+			<a href="#abrirLandscapeMenu" class="close">
+				<i class="mdi mdi-close"></i>
+			</a>
+		</article>
 
-	<article class="light-box" id="landscape2">
-		<a href="#landscape1" class="next">
-			<i class="mdi mdi-arrow-left"></i>
-		</a>
-		<img src="Contenido multimedia/landscape-2.jpg" alt="">
-		<a href="#landscape3" class="next">
-			<i class="mdi mdi-arrow-right"></i>
-		</a>
-		<a href="#abrirLandscapeMenu" class="close">
-			<i class="mdi mdi-close"></i>
-		</a>
-	</article>
+		<article class="light-box" id="landscape3">
+			<a href="#landscape2" class="next">
+				<i class="mdi mdi-arrow-left"></i>
+			</a>
+			<img src="contenido_multimedia/landscape-3.jpg" alt="">
+			<a href="#landscape4" class="next">
+				<i class="mdi mdi-arrow-right"></i>
+			</a>
+			<a href="#abrirLandscapeMenu" class="close">
+				<i class="mdi mdi-close"></i>
+			</a>
+		</article>
 
-	<article class="light-box" id="landscape3">
-		<a href="#landscape2" class="next">
-			<i class="mdi mdi-arrow-left"></i>
-		</a>
-		<img src="Contenido multimedia/landscape-3.jpg" alt="">
-		<a href="#landscape4" class="next">
-			<i class="mdi mdi-arrow-right"></i>
-		</a>
-		<a href="#abrirLandscapeMenu" class="close">
-			<i class="mdi mdi-close"></i>
-		</a>
-	</article>
+		<article class="light-box" id="landscape4">
+			<a href="#landscape3" class="next">
+				<i class="mdi mdi-arrow-left"></i>
+			</a>
+			<img src="contenido_multimedia/landscape-4.jpg" alt="">
+			<a href="#landscape5" class="next">
+				<i class="mdi mdi-arrow-right"></i>
+			</a>
+			<a href="#abrirLandscapeMenu" class="close">
+				<i class="mdi mdi-close"></i>
+			</a>
+		</article>
 
-	<article class="light-box" id="landscape4">
-		<a href="#landscape3" class="next">
-			<i class="mdi mdi-arrow-left"></i>
-		</a>
-		<img src="Contenido multimedia/landscape-4.jpg" alt="">
-		<a href="#landscape5" class="next">
-			<i class="mdi mdi-arrow-right"></i>
-		</a>
-		<a href="#abrirLandscapeMenu" class="close">
-			<i class="mdi mdi-close"></i>
-		</a>
-	</article>
+		<article class="light-box" id="landscape5">
+			<a href="#landscape4" class="next">
+				<i class="mdi mdi-arrow-left"></i>
+			</a>
+			<img src="contenido_multimedia/landscape-5.jpg" alt="">
+			<a href="#landscape6" class="next">
+				<i class="mdi mdi-arrow-right"></i>
+			</a>
+			<a href="#abrirLandscapeMenu" class="close">
+				<i class="mdi mdi-close"></i>
+			</a>
+		</article>
 
-	<article class="light-box" id="landscape5">
-		<a href="#landscape4" class="next">
-			<i class="mdi mdi-arrow-left"></i>
-		</a>
-		<img src="Contenido multimedia/landscape-5.jpg" alt="">
-		<a href="#landscape6" class="next">
-			<i class="mdi mdi-arrow-right"></i>
-		</a>
-		<a href="#abrirLandscapeMenu" class="close">
-			<i class="mdi mdi-close"></i>
-		</a>
-	</article>
+		<article class="light-box" id="landscape6">
+			<a href="#landscape5" class="next">
+				<i class="mdi mdi-arrow-left"></i>
+			</a>
+			<img src="contenido_multimedia/landscape-6.jpg" alt="">
+			<a href="#abrirMacroMenu" class="next">
+				<i class="mdi mdi-arrow-right"></i>
+			</a>
+			<a href="#abrirLandscapeMenu" class="close">
+				<i class="mdi mdi-close"></i>
+			</a>
+		</article>
 
-	<article class="light-box" id="landscape6">
-		<a href="#landscape5" class="next">
-			<i class="mdi mdi-arrow-left"></i>
-		</a>
-		<img src="Contenido multimedia/landscape-6.jpg" alt="">
-		<a href="#abrirMacroMenu" class="next">
-			<i class="mdi mdi-arrow-right"></i>
-		</a>
-		<a href="#abrirLandscapeMenu" class="close">
-			<i class="mdi mdi-close"></i>
-		</a>
-	</article>
+		<!-- MACRO -->
+		<h2 class="headerMacro" id="abrirMacroMenu">MACRO</h2>
+		<!-- Aca van las fotos -->
+		<section class="tralala">
+			<a href="#macro1">
+				<img src="contenido_multimedia/macro-1.jpg" alt="">
+			</a>
+			<a href="#macro2">
+				<img src="contenido_multimedia/macro-2.jpg" alt="">
+			</a>
+			<a href="#macro3">
+				<img src="contenido_multimedia/macro-3.jpg" alt="">
+			</a>
+			<a href="#macro4">
+				<img src="contenido_multimedia/macro-4.jpg" alt="">
+			</a>
+			<a href="#macro5">
+				<img src="contenido_multimedia/macro-5.jpg" alt="">
+			</a>
+			<a href="#macro6">
+				<img src="contenido_multimedia/macro-6.jpg" alt="">
+			</a>
+		</section>
+		<!-- Aca va la configuracion de las flechas-->
+		<article class="light-box" id="macro1">
+			<a href="#macro6" class="next">
+				<i class="mdi mdi-arrow-left"></i>
+			</a>
+			<img src="contenido_multimedia/macro-1.jpg" alt="">
+			<a href="#macro2" class="next">
+				<i class="mdi mdi-arrow-right"></i>
+			</a>
+			<a href="#abrirMacroMenu" class="close">
+				<i class="mdi mdi-close"></i>
+			</a>
+		</article>
 
-	<!-- MACRO -->
-	<h2 class="headerMacro" id="abrirMacroMenu">MACRO</h2>
-	<section class="tralala">
-		<a href="#macro1">
-			<img src="Contenido multimedia/macro-1.jpg" alt="">
-		</a>
-		<a href="#macro2">
-			<img src="Contenido multimedia/macro-2.jpg" alt="">
-		</a>
-		<a href="#macro3">
-			<img src="Contenido multimedia/macro-3.jpg" alt="">
-		</a>
-		<a href="#macro4">
-			<img src="Contenido multimedia/macro-4.jpg" alt="">
-		</a>
-		<a href="#macro5">
-			<img src="Contenido multimedia/macro-5.jpg" alt="">
-		</a>
-		<a href="#macro6">
-			<img src="Contenido multimedia/macro-6.jpg" alt="">
-		</a>
-	</section>
+		<article class="light-box" id="macro2">
+			<a href="#macro1" class="next">
+				<i class="mdi mdi-arrow-left"></i>
+			</a>
+			<img src="contenido_multimedia/macro-2.jpg" alt="">
+			<a href="#macro3" class="next">
+				<i class="mdi mdi-arrow-right"></i>
+			</a>
+			<a href="#abrirMacroMenu" class="close">
+				<i class="mdi mdi-close"></i>
+			</a>
+		</article>
 
-	<article class="light-box" id="macro1">
-		<a href="#macro6" class="next">
-			<i class="mdi mdi-arrow-left"></i>
-		</a>
-		<img src="Contenido multimedia/macro-1.jpg" alt="">
-		<a href="#macro2" class="next">
-			<i class="mdi mdi-arrow-right"></i>
-		</a>
-		<a href="#abrirMacroMenu" class="close">
-			<i class="mdi mdi-close"></i>
-		</a>
-	</article>
+		<article class="light-box" id="macro3">
+			<a href="#macro2" class="next">
+				<i class="mdi mdi-arrow-left"></i>
+			</a>
+			<img src="contenido_multimedia/macro-3.jpg" alt="">
+			<a href="#macro4" class="next">
+				<i class="mdi mdi-arrow-right"></i>
+			</a>
+			<a href="#abrirMacroMenu" class="close">
+				<i class="mdi mdi-close"></i>
+			</a>
+		</article>
 
-	<article class="light-box" id="macro2">
-		<a href="#macro1" class="next">
-			<i class="mdi mdi-arrow-left"></i>
-		</a>
-		<img src="Contenido multimedia/macro-2.jpg" alt="">
-		<a href="#macro3" class="next">
-			<i class="mdi mdi-arrow-right"></i>
-		</a>
-		<a href="#abrirMacroMenu" class="close">
-			<i class="mdi mdi-close"></i>
-		</a>
-	</article>
+		<article class="light-box" id="macro4">
+			<a href="#macro3" class="next">
+				<i class="mdi mdi-arrow-left"></i>
+			</a>
+			<img src="contenido_multimedia/macro-4.jpg" alt="">
+			<a href="#macro5" class="next">
+				<i class="mdi mdi-arrow-right"></i>
+			</a>
+			<a href="#abrirMacroMenu" class="close">
+				<i class="mdi mdi-close"></i>
+			</a>
+		</article>
 
-	<article class="light-box" id="macro3">
-		<a href="#macro2" class="next">
-			<i class="mdi mdi-arrow-left"></i>
-		</a>
-		<img src="Contenido multimedia/macro-3.jpg" alt="">
-		<a href="#macro4" class="next">
-			<i class="mdi mdi-arrow-right"></i>
-		</a>
-		<a href="#abrirMacroMenu" class="close">
-			<i class="mdi mdi-close"></i>
-		</a>
-	</article>
+		<article class="light-box" id="macro5">
+			<a href="#macro4" class="next">
+				<i class="mdi mdi-arrow-left"></i>
+			</a>
+			<img src="contenido_multimedia/macro-5.jpg" alt="">
+			<a href="#macro6" class="next">
+				<i class="mdi mdi-arrow-right"></i>
+			</a>
+			<a href="#abrirMacroMenu" class="close">
+				<i class="mdi mdi-close"></i>
+			</a>
+		</article>
 
-	<article class="light-box" id="macro4">
-		<a href="#macro3" class="next">
-			<i class="mdi mdi-arrow-left"></i>
-		</a>
-		<img src="Contenido multimedia/macro-4.jpg" alt="">
-		<a href="#macro5" class="next">
-			<i class="mdi mdi-arrow-right"></i>
-		</a>
-		<a href="#abrirMacroMenu" class="close">
-			<i class="mdi mdi-close"></i>
-		</a>
-	</article>
+		<article class="light-box" id="macro6">
+			<a href="#macro5" class="next">
+				<i class="mdi mdi-arrow-left"></i>
+			</a>
+			<img src="contenido_multimedia/macro-6.jpg" alt="">
+			<a href="#abrirPortraitMenu" class="next">
+				<i class="mdi mdi-arrow-right"></i>
+			</a>
+			<a href="#abrirMacroMenu" class="close">
+				<i class="mdi mdi-close"></i>
+			</a>
+		</article>
 
-	<article class="light-box" id="macro5">
-		<a href="#macro4" class="next">
-			<i class="mdi mdi-arrow-left"></i>
-		</a>
-		<img src="Contenido multimedia/macro-5.jpg" alt="">
-		<a href="#macro6" class="next">
-			<i class="mdi mdi-arrow-right"></i>
-		</a>
-		<a href="#abrirMacroMenu" class="close">
-			<i class="mdi mdi-close"></i>
-		</a>
-	</article>
+		<!--
+			PORTRAIT
+		-->
 
-	<article class="light-box" id="macro6">
-		<a href="#macro5" class="next">
-			<i class="mdi mdi-arrow-left"></i>
-		</a>
-		<img src="Contenido multimedia/macro-6.jpg" alt="">
-		<a href="#abrirPortraitMenu" class="next">
-			<i class="mdi mdi-arrow-right"></i>
-		</a>
-		<a href="#abrirMacroMenu" class="close">
-			<i class="mdi mdi-close"></i>
-		</a>
-	</article>
+		<h2 class="headerPortrait" id="abrirPortraitMenu">PORTRAIT</h2>
+		<!-- Aca van las fotos -->
+		<section class="tralala">
+			<a href="#portrait1">
+				<img src="contenido_multimedia/portrait-1.jpg" alt="">
+			</a>
+			<a href="#portrait2">
+				<img src="contenido_multimedia/portrait-2.jpg" alt="">
+			</a>
+			<a href="#portrait3">
+				<img src="contenido_multimedia/portrait-3.jpg" alt="">
+			</a>
+			<a href="#portrait4">
+				<img src="contenido_multimedia/portrait-4.jpg" alt="">
+			</a>
+			<a href="#portrait5">
+				<img src="contenido_multimedia/portrait-5.jpg" alt="">
+			</a>
+			<a href="#portrait6">
+				<img src="contenido_multimedia/portrait-6.jpg" alt="">
+			</a>
+		</section>
 
-	<!-- PORTRAIT -->
+		<!-- Aca va la configuracion de las flechas -->
+		<article class="light-box" id="portrait1">
+			<a href="#portrait6" class="next">
+				<i class="mdi mdi-arrow-left"></i>
+			</a>
+			<img src="contenido_multimedia/portrait-1.jpg" alt="">
+			<a href="#portrait2" class="next">
+				<i class="mdi mdi-arrow-right"></i>
+			</a>
+			<a href="#abrirPortraitMenu" class="close">
+				<i class="mdi mdi-close"></i>
+			</a>
+		</article>
 
-	<h2 class="headerPortrait" id="abrirPortraitMenu">PORTRAIT</h2>
-	<section class="tralala">
-		<a href="#portrait1">
-			<img src="Contenido multimedia/portrait-1.jpg" alt="">
-		</a>
-		<a href="#portrait2">
-			<img src="Contenido multimedia/portrait-2.jpg" alt="">
-		</a>
-		<a href="#portrait3">
-			<img src="Contenido multimedia/portrait-3.jpg" alt="">
-		</a>
-		<a href="#portrait4">
-			<img src="Contenido multimedia/portrait-4.jpg" alt="">
-		</a>
-		<a href="#portrait5">
-			<img src="Contenido multimedia/portrait-5.jpg" alt="">
-		</a>
-		<a href="#portrait6">
-			<img src="Contenido multimedia/portrait-6.jpg" alt="">
-		</a>
-	</section>
+		<article class="light-box" id="portrait2">
+			<a href="#portrait1" class="next">
+				<i class="mdi mdi-arrow-left"></i>
+			</a>
+			<img src="contenido_multimedia/portrait-2.jpg" alt="">
+			<a href="#portrait3" class="next">
+				<i class="mdi mdi-arrow-right"></i>
+			</a>
+			<a href="#abrirPortraitMenu" class="close">
+				<i class="mdi mdi-close"></i>
+			</a>
+		</article>
 
-	<article class="light-box" id="portrait1">
-		<a href="#portrait6" class="next">
-			<i class="mdi mdi-arrow-left"></i>
-		</a>
-		<img src="Contenido multimedia/portrait-1.jpg" alt="">
-		<a href="#portrait2" class="next">
-			<i class="mdi mdi-arrow-right"></i>
-		</a>
-		<a href="#abrirPortraitMenu" class="close">
-			<i class="mdi mdi-close"></i>
-		</a>
-	</article>
+		<article class="light-box" id="portrait3">
+			<a href="#portrait2" class="next">
+				<i class="mdi mdi-arrow-left"></i>
+			</a>
+			<img src="contenido_multimedia/portrait-3.jpg" alt="">
+			<a href="#portrait4" class="next">
+				<i class="mdi mdi-arrow-right"></i>
+			</a>
+			<a href="#abrirPortraitMenu" class="close">
+				<i class="mdi mdi-close"></i>
+			</a>
+		</article>
 
-	<article class="light-box" id="portrait2">
-		<a href="#portrait1" class="next">
-			<i class="mdi mdi-arrow-left"></i>
-		</a>
-		<img src="Contenido multimedia/portrait-2.jpg" alt="">
-		<a href="#portrait3" class="next">
-			<i class="mdi mdi-arrow-right"></i>
-		</a>
-		<a href="#abrirPortraitMenu" class="close">
-			<i class="mdi mdi-close"></i>
-		</a>
-	</article>
+		<article class="light-box" id="portrait4">
+			<a href="#portrait3" class="next">
+				<i class="mdi mdi-arrow-left"></i>
+			</a>
+			<img src="contenido_multimedia/portrait-4.jpg" alt="">
+			<a href="#portrait5" class="next">
+				<i class="mdi mdi-arrow-right"></i>
+			</a>
+			<a href="#abrirPortraitMenu" class="close">
+				<i class="mdi mdi-close"></i>
+			</a>
+		</article>
 
-	<article class="light-box" id="portrait3">
-		<a href="#portrait2" class="next">
-			<i class="mdi mdi-arrow-left"></i>
-		</a>
-		<img src="Contenido multimedia/portrait-3.jpg" alt="">
-		<a href="#portrait4" class="next">
-			<i class="mdi mdi-arrow-right"></i>
-		</a>
-		<a href="#abrirPortraitMenu" class="close">
-			<i class="mdi mdi-close"></i>
-		</a>
-	</article>
+		<article class="light-box" id="portrait5">
+			<a href="#portrait4" class="next">
+				<i class="mdi mdi-arrow-left"></i>
+			</a>
+			<img src="contenido_multimedia/portrait-5.jpg" alt="">
+			<a href="#portrait6" class="next">
+				<i class="mdi mdi-arrow-right"></i>
+			</a>
+			<a href="#abrirPortraitMenu" class="close">
+				<i class="mdi mdi-close"></i>
+			</a>
+		</article>
 
-	<article class="light-box" id="portrait4">
-		<a href="#portrait3" class="next">
-			<i class="mdi mdi-arrow-left"></i>
-		</a>
-		<img src="Contenido multimedia/portrait-4.jpg" alt="">
-		<a href="#portrait5" class="next">
-			<i class="mdi mdi-arrow-right"></i>
-		</a>
-		<a href="#abrirPortraitMenu" class="close">
-			<i class="mdi mdi-close"></i>
-		</a>
-	</article>
-
-	<article class="light-box" id="portrait5">
-		<a href="#portrait4" class="next">
-			<i class="mdi mdi-arrow-left"></i>
-		</a>
-		<img src="Contenido multimedia/portrait-5.jpg" alt="">
-		<a href="#portrait6" class="next">
-			<i class="mdi mdi-arrow-right"></i>
-		</a>
-		<a href="#abrirPortraitMenu" class="close">
-			<i class="mdi mdi-close"></i>
-		</a>
-	</article>
-
-	<article class="light-box" id="portrait6">
-		<a href="#portrait5" class="next">
-			<i class="mdi mdi-arrow-left"></i>
-		</a>
-		<img src="Contenido multimedia/portrait-6.jpg" alt="">
-		<a href="#abrirLandscapeMenu" class="next">
-			<i class="mdi mdi-arrow-right"></i>
-		</a>
-		<a href="#abrirPortraitMenu" class="close">
-			<i class="mdi mdi-close"></i>
-		</a>
-	</article>
+		<article class="light-box" id="portrait6">
+			<a href="#portrait5" class="next">
+				<i class="mdi mdi-arrow-left"></i>
+			</a>
+			<img src="contenido_multimedia/portrait-6.jpg" alt="">
+			<a href="#abrirLandscapeMenu" class="next">
+				<i class="mdi mdi-arrow-right"></i>
+			</a>
+			<a href="#abrirPortraitMenu" class="close">
+				<i class="mdi mdi-close"></i>
+			</a>
+		</article>
+	</main>
 
 	<!-- FOOTER -->
-	<footer class="container-fluid">
-		<div class="links-redes row">
+	<footer>
+		<div class="footer">
 			<a href="mailto: PH.julietapuente@gmail.com" target="_blank">
 				<i class="mdi mdi-gmail"></i>
 			</a>
@@ -370,9 +358,7 @@
 			<a href="http://www.instagram.com/burntoutbridge/" target="_blank">
 				<i class="mdi mdi-instagram"></i>
 			</a>
-		</div>
-		<div class="row">
-			<p>BurnOutBridge &copy 2020</p>
+			<p class="m-0">BridgePH &copy 2020</p>
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
