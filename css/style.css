@@ -121,9 +121,12 @@ h2#abrirPortraitMenu.headerPortrait {
   font-size: 40px;
   margin: 0; }
 
+section.tralala.landscape-fotos {
+  grid-template-columns: repeat(9, 1fr); }
+
 section.tralala {
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   width: 95%;
   margin: auto;
   grid-gap: 10px;
@@ -288,4 +291,6 @@ footer {
 
 @media (min-width: 992px) and (max-width: 1199px) {
   section.tralala {
-    grid-template-columns: repeat(9, 1fr); } }
+    grid-template-columns: repeat(9, 1fr); }
+  section.tralala.fotos-macro {
+    grid-template-columns: repeat(10, 1fr); } }

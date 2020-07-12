@@ -171,9 +171,12 @@ h2#abrirPortraitMenu.headerPortrait {
     margin: 0;
 }
 
+section.tralala.landscape-fotos{
+    grid-template-columns: repeat(9,1fr);
+}
 section.tralala {
     display: grid;
-    grid-template-columns: repeat(9,1fr);
+    grid-template-columns: repeat(10,1fr);
     width: 95%;
     margin: auto;
     grid-gap: 10px;
@@ -454,6 +457,9 @@ footer {
     // GALERIA
     section.tralala {
         grid-template-columns: repeat(9,1fr);
+    }
+    section.tralala.fotos-macro{
+        grid-template-columns: repeat(10,1fr);
     }
     // NAVBAR
 
