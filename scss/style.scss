@@ -173,7 +173,7 @@ h2#abrirPortraitMenu.headerPortrait {
 
 section.tralala {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(9,1fr);
     width: 95%;
     margin: auto;
     grid-gap: 10px;
@@ -451,6 +451,10 @@ footer {
 
 @media (min-width: 992px) and (max-width:1199px) {
     // LG
+    // GALERIA
+    section.tralala {
+        grid-template-columns: repeat(9,1fr);
+    }
     // NAVBAR
 
 }

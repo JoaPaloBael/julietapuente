@@ -8,30 +8,39 @@
 		href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.2.45/css/materialdesignicons.min.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Yeseva+One&display=swap"
 		rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel=" stylesheet" type="text/css" href="css/style.css">
 	<title>Galería de imágenes</title>
 </head>
 
-<body>
-	<!-- HEADER -->
+<body class="galeria">
+    <!-- HEADER -->
 
-	<header class="encabezado">
-		<div class="contenedor-encabezado">
-			<a href="#">
-				<img src="contenido_multimedia/logo_julieta-puente.png" alt="">
-			</a>
-
-			<nav class="navegacion">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="galeria.html">Galeria</a></li>
-					<li><a href="trabajos.html">Clientes</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
-				</ul>
-			</nav>
-		</div>
-
+    <header class="encabezado">
+        <div class="contenedor-encabezado navbar navbar-expand-sm navbar-light">
+            <a href="#" class="navbar-brand"><img src="contenido_multimedia/logo_julieta-puente.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navegacion collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav">
+                    <li class="active"><a href="index.html" class="">Home<span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle " href="galeria.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Galeria
+                        </a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="galeria.html#abrirLandscapeMenu">Landscape</a>
+							<a class="dropdown-item" href="galeria.html#abrirMacroMenu">Macro</a>
+                            <a class="dropdown-item" href="galeria.html#abrirPortraitMenu">Portrait</a>
+                            <a class="dropdown-item" href="galeria.html#abrirStreetMenu">Streetphoto</a>
+						</div>
+                    </li>
+                    <li><a href="trabajos.html">Clientes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
 	</header>
 
 	<!-- LANDSCAPE -->
@@ -40,27 +49,36 @@
 		<!-- Aca van las fotos -->
 		<section class="tralala">
 			<a href="#landscape1">
-				<img src="Contenido_multimedia/landscape-1.jpg" alt="">
+				<img src="Contenido_multimedia/landscape-1.jpg" alt="Cascada en un río de Cordoba, Argentina.">
 			</a>
 			<a href="#landscape2">
-				<img src="Contenido_multimedia/landscape-2.jpg" alt="">
+				<img src="Contenido_multimedia/landscape-2.jpg" alt="Vista de laderas con mucha vegetación y rayos de sol.">
 			</a>
 			<a href="#landscape3">
-				<img src="Contenido_multimedia/landscape-3.jpg" alt="">
+				<img src="Contenido_multimedia/landscape-3.jpg" alt="Nube entre sierras a contraluz.">
 			</a>
 			<a href="#landscape4">
-				<img src="contenido_multimedia/landscape-4.jpg" alt="">
+				<img src="contenido_multimedia/landscape-4.jpg" alt="Vista de lejos de las ruinas de Machu picchu, Perú.">
 			</a>
 			<a href="#landscape5">
-				<img src="contenido_multimedia/landscape-5.jpg" alt="">
+				<img src="contenido_multimedia/landscape-5.jpg" alt="Vista de la ciudad de Paris con la torre Eiffel desde lo alto del arco del triunfo.">
 			</a>
 			<a href="#landscape6">
-				<img src="contenido_multimedia/landscape-6.jpg" alt="">
+				<img src="contenido_multimedia/landscape-6.jpg" alt="Arbol sin hojas en un parque.">
+			</a>
+			<a href="#landscape7">
+				<img src="contenido_multimedia/landscape-7.jpg" alt="Tormenta aproximandose al Faro del fin del mundo, Ushuahia, Argenina.">
+			</a>
+			<a href="#landscape8">
+				<img src="contenido_multimedia/landscape-8.jpg" alt="Día soleado en el Faro del fin del mundo, Ushuaia, Argentina.">
+			</a>
+			<a href="#landscape9">
+				<img src="contenido_multimedia/landscape-9.jpg" alt="Pequeña cascada de un río.">
 			</a>
 		</section>
 		<!-- Aca va la configuracion de las flechas -->
 		<article class="light-box" id="landscape1">
-			<a href="#landscape6" class="next">
+			<a href="#landscape9" class="next">
 				<i class="mdi mdi-arrow-left"></i>
 			</a>
 			<img src="contenido_multimedia/landscape-1.jpg" alt="">
@@ -129,6 +147,45 @@
 				<i class="mdi mdi-arrow-left"></i>
 			</a>
 			<img src="contenido_multimedia/landscape-6.jpg" alt="">
+			<a href="#landscape7" class="next">
+				<i class="mdi mdi-arrow-right"></i>
+			</a>
+			<a href="#abrirLandscapeMenu" class="close">
+				<i class="mdi mdi-close"></i>
+			</a>
+		</article>
+
+		<article class="light-box" id="landscape7">
+			<a href="#landscape6" class="next">
+				<i class="mdi mdi-arrow-left"></i>
+			</a>
+			<img src="contenido_multimedia/landscape-7.jpg" alt="">
+			<a href="#landscape8" class="next">
+				<i class="mdi mdi-arrow-right"></i>
+			</a>
+			<a href="#abrirLandscapeMenu" class="close">
+				<i class="mdi mdi-close"></i>
+			</a>
+		</article>
+
+		<article class="light-box" id="landscape8">
+			<a href="#landscape7" class="next">
+				<i class="mdi mdi-arrow-left"></i>
+			</a>
+			<img src="contenido_multimedia/landscape-8.jpg" alt="">
+			<a href="#landscape9" class="next">
+				<i class="mdi mdi-arrow-right"></i>
+			</a>
+			<a href="#abrirLandscapeMenu" class="close">
+				<i class="mdi mdi-close"></i>
+			</a>
+		</article>
+
+		<article class="light-box" id="landscape9">
+			<a href="#landscape8" class="next">
+				<i class="mdi mdi-arrow-left"></i>
+			</a>
+			<img src="contenido_multimedia/landscape-10.jpg" alt="">
 			<a href="#abrirMacroMenu" class="next">
 				<i class="mdi mdi-arrow-right"></i>
 			</a>
@@ -347,20 +404,20 @@
 	</main>
 
 	<!-- FOOTER -->
-	<footer>
-		<div class="footer">
-			<a href="mailto: PH.julietapuente@gmail.com" target="_blank">
-				<i class="mdi mdi-gmail"></i>
-			</a>
-			<a href="http://www.facebook.com/julieta.puente" target="_blank">
-				<i class="mdi mdi-facebook"></i>
-			</a>
-			<a href="http://www.instagram.com/burntoutbridge/" target="_blank">
-				<i class="mdi mdi-instagram"></i>
-			</a>
-			<p class="m-0">BridgePH &copy 2020</p>
-		</div>
-	</footer>
+    <footer>
+        <div class="footer">
+            <a href="mailto: PH.julietapuente@gmail.com" target="_blank">
+                <i class="mdi mdi-gmail"></i>
+            </a>
+            <a href="http://www.facebook.com/julieta.puente" target="_blank">
+                <i class="mdi mdi-facebook"></i>
+            </a>
+            <a href="http://www.instagram.com/burntoutbridge/" target="_blank">
+                <i class="mdi mdi-instagram"></i>
+            </a>
+            <p class="m-0">BridgePH &copy 2020</p>
+        </div>
+    </footer>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
