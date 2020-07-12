@@ -21,19 +21,23 @@
     <!-- HEADER -->
 
     <header class="encabezado">
-        <div class="contenedor-encabezado">
-            <a href="#"><img src="contenido_multimedia/logo_julieta-puente.png" alt=""></a>
-            <nav class="navegacion">
-                <ul class="">
-                    <li><a href="index.html">Home</a></li>
+        <div class="contenedor-encabezado navbar navbar-expand-sm navbar-light">
+            <a href="#" class="navbar-brand"><img src="contenido_multimedia/logo_julieta-puente.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navegacion collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav">
+                    <li class="active"><a href="index.html" class="">Home<span class="sr-only">(current)</span></a></li>
                     <li class="dropdown">
-                        <a class="dropdown-toggle" href="galeria.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="dropdown-toggle " href="galeria.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Galeria
                         </a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							<a class="dropdown-item" href="galeria.html#abrirLandscapeMenu">Landscape</a>
 							<a class="dropdown-item" href="galeria.html#abrirMacroMenu">Macro</a>
-							<a class="dropdown-item" href="galeria.html#abrirPortraitMenu">Portrait</a>
+                            <a class="dropdown-item" href="galeria.html#abrirPortraitMenu">Portrait</a>
+                            <a class="dropdown-item" href="galeria.html#abrirStreetMenu">Streetphoto</a>
 						</div>
                     </li>
                     <li><a href="trabajos.html">Clientes</a></li>

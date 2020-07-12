@@ -34,19 +34,28 @@ body {
             justify-content: space-between;
 
             a {
+                display: flex;
                 max-height: 9vh;
                 text-decoration: none;
+                align-items: center;
 
                 img {
                     height: 9vh;
-                    margin-left: 1rem;
                 }
             }
+            button.navbar-toggler{
+                padding: 2px;
+            }
 
-            nav.navegacion {
-
-                ul {
+            nav#navbarTogglerDemo02.navegacion.navbar-collapse.show{
+                display: flex;
+                justify-content: flex-end;
+            }
+            nav.navegacion{
+                justify-content: flex-end;
+                ul.navbar-nav{
                     display: flex;
+                    align-items: flex-end;
                     margin: 0;
                     padding: 0;
                     list-style: none;
