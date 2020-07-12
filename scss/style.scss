@@ -33,9 +33,6 @@ body {
             display: flex;
             justify-content: space-between;
 
-            a.contenedor-logo{
-
-            }
             a {
                 max-height: 9vh;
                 text-decoration: none;
@@ -44,10 +41,6 @@ body {
                     height: 9vh;
                     margin-left: 1rem;
                 }
-            }
-
-            span.icono-menu{
-                display: none;
             }
 
             nav.navegacion {
@@ -67,11 +60,18 @@ body {
                             font-size: 18px;
                             color: $white;
 
+
                             &:hover {
                                 color: $lightSecondaryColor;
                                 font-weight: bold;
                             }
-
+                        }
+                        div.dropdown-menu{
+                            background-color: $darkPrimaryColor;
+                            a{
+                                background-color: transparent;
+                                display: block;
+                            }
                         }
                     }
                 }
@@ -369,30 +369,6 @@ footer {
 @media (max-width: 421px) {
 
     // XS
-    // NAVBAR
-    body{
-        header.encabezado{
-            div.contenedor-encabezado{
-
-                span.icono-menu{
-                    display: block;
-                    cursor: pointer;
-
-                }
-                nav.navegacion {
-                    width: 100%;
-                    margin-top: 1rem;
-                    ul{
-                        display: none;
-                    }
-                    ul.mostrate{
-                        display: block;
-
-                    }
-                }
-            }
-        }
-    }
 
         // INDEX
         body.index {

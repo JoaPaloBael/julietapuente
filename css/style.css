@@ -30,8 +30,6 @@ body {
         body header.encabezado div.contenedor-encabezado a img {
           height: 9vh;
           margin-left: 1rem; }
-      body header.encabezado div.contenedor-encabezado span.icono-menu {
-        display: none; }
       body header.encabezado div.contenedor-encabezado nav.navegacion ul {
         display: flex;
         margin: 0;
@@ -46,6 +44,11 @@ body {
           body header.encabezado div.contenedor-encabezado nav.navegacion ul li a:hover {
             color: #B2EBF2;
             font-weight: bold; }
+        body header.encabezado div.contenedor-encabezado nav.navegacion ul li div.dropdown-menu {
+          background-color: #374046; }
+          body header.encabezado div.contenedor-encabezado nav.navegacion ul li div.dropdown-menu a {
+            background-color: transparent;
+            display: block; }
 
 /*INDEX*/
 body.index {
@@ -250,16 +253,6 @@ footer {
 
 /*RESPONSIVE MEDIA QUERY*/
 @media (max-width: 421px) {
-  body header.encabezado div.contenedor-encabezado span.icono-menu {
-    display: block;
-    cursor: pointer; }
-  body header.encabezado div.contenedor-encabezado nav.navegacion {
-    width: 100%;
-    margin-top: 1rem; }
-    body header.encabezado div.contenedor-encabezado nav.navegacion ul {
-      display: none; }
-    body header.encabezado div.contenedor-encabezado nav.navegacion ul.mostrate {
-      display: block; }
   body.index main.index div {
     padding: 0; }
     body.index main.index div p {
