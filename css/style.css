@@ -100,38 +100,34 @@ body.index {
         width: 410px; }
 
 /*GALERIA*/
-h1#abrirLandscapeMenu.headerLandscape {
-  font-weight: 400;
-  text-align: center;
-  padding: 10px 0 0 0;
-  font-size: 40px;
-  margin: 0; }
-
-h2#abrirMacroMenu.headerMacro {
-  font-weight: 400;
-  text-align: center;
-  padding: 10px 0 0 0;
-  font-size: 40px;
-  margin: 0; }
-
-h2#abrirPortraitMenu.headerPortrait {
-  font-weight: 400;
-  text-align: center;
-  padding: 10px 0 0 0;
-  font-size: 40px;
-  margin: 0; }
+body.galeria {
+  background-color: #757575; }
+  body.galeria h1, body.galeria h2 {
+    font-family: "Yeseva One", cursive;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 0 0 0;
+    font-size: 40px;
+    margin-top: 1rem;
+    color: #FFFFFF;
+    margin-bottom: 0; }
 
 section.tralala.landscape-fotos {
-  grid-template-columns: repeat(9, 1fr); }
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: auto; }
 
 section.tralala {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   width: 95%;
   margin: auto;
-  grid-gap: 10px;
-  padding: 15px 0;
-  overflow: hidden; }
+  grid-gap: 2px;
+  padding: 15px 45px;
+  overflow: hidden;
+  justify-items: center;
+  align-items: center;
+  background-color: #374046;
+  border-radius: 5px; }
   section.tralala a {
     display: block;
     position: relative;
@@ -142,7 +138,8 @@ section.tralala {
     section.tralala a img {
       width: 100%;
       vertical-align: top;
-      height: 300px;
+      overflow: hidden;
+      min-height: 300px;
       object-fit: cover; }
 
 article.light-box {
@@ -272,8 +269,17 @@ footer {
     body.index main.index div h2 {
       font-size: 45px;
       flex-wrap: wrap; }
-  section.landscape {
-    grid-template-columns: repeat(auto-fit, minmax 200px, 1fr); }
+  section.tralala.landscape-fotos {
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(3, 100px); }
+  section.tralala {
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(5, 100px);
+    justify-items: stretch;
+    align-items: stretch;
+    grid-gap: 0px; }
+    section.tralala a img {
+      min-height: 150px; }
   article.light-box a.close {
     top: 120px;
     right: 15px; }
@@ -281,6 +287,17 @@ footer {
     width: 100%; } }
 
 @media (min-width: 422px) and (max-width: 767px) {
+  section.tralala.landscape-fotos {
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(3, 100px); }
+  section.tralala {
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(5, 100px);
+    justify-items: stretch;
+    align-items: stretch;
+    grid-gap: 0px; }
+    section.tralala a img {
+      min-height: 150px; }
   body.index main.index div {
     padding: 0; }
     body.index main.index div p {
@@ -288,9 +305,3 @@ footer {
       margin: 0; }
     body.index main.index div h2 {
       font-size: 4rem; } }
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  section.tralala {
-    grid-template-columns: repeat(9, 1fr); }
-  section.tralala.fotos-macro {
-    grid-template-columns: repeat(10, 1fr); } }
