@@ -1,75 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Porfolio Fotografico de Julieta Puente">
+	<meta name="keywords" content="Porfolio, fotografia, fotografo, landscape, portrait, macro, ">
+
 	<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.2.45/css/materialdesignicons.min.css" />
-	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Yeseva+One&display=swap"
-		rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&family=Scope+One&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"">
-    <link rel=" stylesheet" type="text/css" href="css/style.css">
+	<link rel=" stylesheet" type="text/css" href="css/style.css">
+
 	<title>Contactame</title>
 </head>
 
-<body>
+<body class="contacto">
 	<!-- HEADER -->
-	<header class="container-fluid">
-		<nav class="navbar navbar-expand-sm p-0">
-			<a class="navbar-brand" href="index.html">
-				<h1>Julieta Puente</h1>
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon mdi mdi-light mdi-menu mdi-24px m-0">
-				</span>
+	<header class="encabezado">
+		<div class="contenedor-encabezado navbar navbar-expand-sm navbar-light">
+			<a href="#" class="navbar-brand"><img src="contenido_multimedia/logo_julieta-puente.png" alt=""></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+				aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
 			</button>
-
-			<div class="collapse navbar-collapse justify-content-end align-items-center pr-3"
-				id="navbarSupportedContent">
+			<nav class="navegacion collapse navbar-collapse" id="navbarTogglerDemo02">
 				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Home</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="galeria.html" id="navbarDropdownMenuLink"
+					<li class="active"><a href="index.html" class="">Home<span class="sr-only">(current)</span></a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle " href="galeria.html" id="navbarDropdown" role="button"
 							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Galería
+							Galeria
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							<a class="dropdown-item" href="galeria.html#abrirLandscapeMenu">Landscape</a>
 							<a class="dropdown-item" href="galeria.html#abrirMacroMenu">Macro</a>
 							<a class="dropdown-item" href="galeria.html#abrirPortraitMenu">Portrait</a>
+							<a class="dropdown-item" href="galeria.html#abrirStreetMenu">Streetphoto</a>
 						</div>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="trabajos.html">Trabajos</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="contacto.html">Contacto</a>
-					</li>
+					<li><a href="biography.html">Bio</a></li>
+					<li><a href="contacto.html">Contacto</a></li>
 				</ul>
-			</div>
-		</nav>
+			</nav>
+		</div>
 	</header>
 
+
 	<!-- FORMULARIO -->
-<div class="bodyFormulario">
-	<h1>Formulario de contacto</h1>
-	<form method="GET" action="">
-		<h2>Contacto</h2>
-		<input type="text" name="nombre" placeholder="Pipi Puente">
-		<input type="text" name="correo" placeholder="Pipi@elmaslindo.com">
-		<input type="text" name="telefono" placeholder="0303456">
-		<textarea name="mensaje" placeholder="Escriba su consulta" id="" cols="30" rows="10">
-		</textarea>
-		<input type="submit" value="Enviar" name="" id="boton">
-	</form>
-</div>
+<main class="contacto">
+	<div class="bodyFormulario">
+		<h1>Formulario de contacto</h1>
+		<form method="GET" action="">
+			<h2>Contactame<i class="mdi mdi-camera-burst"></i></h2>
+			<input type="text" name="nombre" placeholder="Juanita Garza">
+			<input type="text" name="correo" placeholder="tuemail@gmail.com">
+			<input type="text" name="telefono" placeholder="1162465896">
+			<textarea name="mensaje" placeholder="Escriba su consulta" id="" cols="30" rows="10">
+			</textarea>
+			<input type="submit" value="Enviar" name="" id="boton">
+		</form>
+	</div>
+</main>
 	<!-- FOOTER -->
-	<footer class="container-fluid">
-		<div class="links-redes row">
+	<footer>
+		<div class="footer">
 			<a href="mailto: PH.julietapuente@gmail.com" target="_blank">
 				<i class="mdi mdi-gmail"></i>
 			</a>
@@ -79,9 +75,7 @@
 			<a href="http://www.instagram.com/burntoutbridge/" target="_blank">
 				<i class="mdi mdi-instagram"></i>
 			</a>
-		</div>
-		<div class="row">
-			<p>BurnOutBridge &copy 2020</p>
+			<p class="m-0">BridgePH &copy 2020</p>
 		</div>
 	</footer>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

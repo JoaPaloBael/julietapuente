@@ -7,11 +7,15 @@ body {
     position: relative;
     padding: 0;
     min-height: 100vh;
-    font-family: helvetica;
+    font-family: $genericFont;
     background-color: $dividerColor;
+    font-size: 19px;
     color: $primaryText;
     width: 100%;
     margin: 0 auto;
+    h1,h2,h3,h4,h5,h6{
+        font-family: $headerFont;
+    }
 
     main {
         padding-top: 10vh;
@@ -43,17 +47,20 @@ body {
                     height: 9vh;
                 }
             }
-            button.navbar-toggler{
+
+            button.navbar-toggler {
                 padding: 2px;
             }
 
-            nav#navbarTogglerDemo02.navegacion.navbar-collapse.show{
+            nav#navbarTogglerDemo02.navegacion.navbar-collapse.show {
                 display: flex;
                 justify-content: flex-end;
             }
-            nav.navegacion{
+
+            nav.navegacion {
                 justify-content: flex-end;
-                ul.navbar-nav{
+
+                ul.navbar-nav {
                     display: flex;
                     align-items: flex-end;
                     margin: 0;
@@ -75,9 +82,11 @@ body {
                                 font-weight: bold;
                             }
                         }
-                        div.dropdown-menu{
+
+                        div.dropdown-menu {
                             background-color: $darkPrimaryColor;
-                            a{
+
+                            a {
                                 background-color: transparent;
                                 display: block;
                             }
@@ -122,7 +131,7 @@ body.index {
 
             h2,
             p {
-                font-family: helvetica;
+                font-family: Helvetica;
                 color: white;
                 display: flex;
                 justify-content: flex-end;
@@ -147,10 +156,11 @@ body.index {
 
 
 /*GALERIA*/
-body.galeria{
+body.galeria {
     background-color: $secondaryText;
 
-    h1,h2{
+    h1,
+    h2 {
         font-family: $headerFont;
         font-weight: 400;
         text-align: center;
@@ -162,14 +172,15 @@ body.galeria{
     }
 }
 
-section.tralala.landscape-fotos{
+section.tralala.landscape-fotos {
 
-    grid-template-columns: repeat(9,1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-template-rows: auto;
 }
+
 section.tralala {
     display: grid;
-    grid-template-columns: repeat(10,1fr);
+    grid-template-columns: repeat(10, 1fr);
     width: 95%;
     margin: auto;
     grid-gap: 2px;
@@ -178,7 +189,7 @@ section.tralala {
     justify-items: center;
     align-items: center;
     background-color: $darkPrimaryColor;
-    border-radius: 5px;
+    border-radius: 15px;
 
     a {
         display: block;
@@ -247,81 +258,147 @@ article.light-box {
 
 }
 
-/*TRABAJOS*/
+/*BIOGRAFIA*/
 
-h1.headerTrabajos {
-    font-weight: 400;
-    text-align: center;
-    padding: 10px 0 0 0;
-    font-size: 40px;
-    margin: 0;
-}
+body.bio {
+    background-color: $secondaryText;
+    background-color: $secondaryText;
+    background-image: url("../contenido_multimedia/landscape-5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 
-div.galeria {
-    background-color: $dividerColor;
+    &::before {
+        content: "";
+        width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: black;
+        opacity: 0.5;
+        z-index: -1;
+    }
+    main.bio {
+        width: 85vh;
+        margin: auto;
+        padding-top: 13vh;
 
-    section.trabajos {
-        div {
-            justify-content: center;
+        a.contenedor-foto-bio {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba($dividerColor, $alpha: 0.6);
+            border-radius: 15px 15px 0 0;
+            padding: 1rem 2rem;
 
-            video {
-                max-width: 450px;
+            h1 {}
+
+            img {
+                width: 150px;
+                border-radius: 50%;
+                box-shadow: 0px 0px 15px black;
+            }
+        }
+
+        div.contenedor-texto-bio {
+            padding: 1rem;
+            background-color: rgba($dividerColor, $alpha: 0.9);
+            border-radius: 0 0 15px 15px;
+
+            p {
+                text-align: left;
+
+                i.mdi {
+                    font-size: 20px;
+                    color: $darkPrimaryColor;
+                    margin-right: .5rem;
+                }
             }
         }
     }
 }
 
-
 /*CONTACTO*/
+body.contacto {
+    background-color: $secondaryText;
+    background-image: url("../contenido_multimedia/landscape-6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 
-div.bodyFormulario {
-    background-size: 100vw 100vh;
-    margin: 0;
-
-    h1 {
-        display: none;
+    &::before {
+        content: "";
+        width: 100%;
+        min-height: 120vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: black;
+        opacity: 0.5;
+        z-index: -1;
     }
+    div.bodyFormulario {
+        background-size: 100vw 100vh;
+        margin: 0;
 
-    form {
-        width: 450px;
-        margin: auto;
-        background: rgba($color: $dividerColor, $alpha: 0.5);
-        padding: 10px 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border-radius: 7px;
+        h1 {
+            display: none;
+        }
 
-        h2 {
-            color: $primaryText;
-            text-align: center;
-            margin: 0;
-            font-size: 30px;
+        form {
+
+            width: 450px;
+            margin: auto;
+            background: rgba($color: $dividerColor, $alpha: 0.5);
+            padding: 10px 20px;
+            margin-top: 20px;
             margin-bottom: 20px;
-        }
+            border-radius: 7px;
 
-        input,
-        textarea {
-            width: 100%;
-            margin-bottom: 20px;
-            padding: 7px;
-            font-size: 17px;
-            border: none;
-        }
-
-        textarea {
-            min-height: 100px;
-            max-height: 200px;
-            max-width: 100%;
-        }
-
-        input#boton {
-            background-color: $darkPrimaryColor;
-            color: $white;
-
-            &:hover {
-                background-color: lighten($darkPrimaryColor, $amount: 25%);
-                cursor: pointer;
+            h2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 color: $primaryText;
+                text-align: center;
+                margin: 0;
+                font-size: 30px;
+                margin-bottom: 20px;
+                i.mdi{
+                    padding-left: 1rem;
+                    margin-top: 2px;
+                    font-size: 35px;
+                }
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                margin-bottom: 20px;
+                padding: 7px;
+                font-size: 17px;
+                border: none;
+                border-radius: 10px;
+            }
+
+            textarea {
+                min-height: 100px;
+                max-height: 200px;
+                max-width: 100%;
+            }
+
+            input#boton {
+                background-color: $darkPrimaryColor;
+                color: $white;
+
+                &:hover {
+                    background-color: lighten($darkPrimaryColor, $amount: 25%);
+                    cursor: pointer;
+                    color: $primaryText;
+                }
             }
         }
     }
@@ -380,40 +457,42 @@ footer {
 
     // XS
 
-        // INDEX
-        body.index {
-            main {}
+    // INDEX
+    body.index {
+        main {}
 
-            main.index {
-                div {
-                    padding: 0;
+        main.index {
+            div {
+                padding: 0;
 
-                    p {
-                        display: none;
-                    }
-
-                    h2 {
-                        font-size: 45px;
-                        flex-wrap: wrap;
-                    }
+                p {
+                    display: none;
                 }
+
+                h2 {
+                    font-size: 45px;
+                    flex-wrap: wrap;
+                }
+            }
         }
     }
 
     // GALERIA
 
-    section.tralala.landscape-fotos{
+    section.tralala.landscape-fotos {
         grid-template-columns: repeat(3, 2fr);
         grid-template-rows: repeat(3, 100px);
     }
+
     section.tralala {
         grid-template-columns: repeat(2, 2fr);
         grid-template-rows: repeat(5, 100px);
         justify-items: stretch;
         align-items: stretch;
         grid-gap: 0px;
-        a{
-            img{
+
+        a {
+            img {
                 min-height: 150px;
             }
         }
@@ -434,20 +513,23 @@ footer {
 }
 
 @media (min-width: 422px) and (max-width:767px) {
+
     // SM
     // GALERIA
-    section.tralala.landscape-fotos{
+    section.tralala.landscape-fotos {
         grid-template-columns: repeat(3, 2fr);
         grid-template-rows: repeat(3, 100px);
     }
+
     section.tralala {
         grid-template-columns: repeat(2, 2fr);
         grid-template-rows: repeat(5, 100px);
         justify-items: stretch;
         align-items: stretch;
         grid-gap: 0px;
-        a{
-            img{
+
+        a {
+            img {
                 min-height: 150px;
             }
         }
@@ -481,13 +563,13 @@ footer {
 }
 
 @media (min-width: 992px) and (max-width:1199px) {
+
     // LG
     // GALERIA
-    section.tralala.landscape-fotos{
-    }
-    section.tralala {
+    section.tralala.landscape-fotos {}
 
-    }
+    section.tralala {}
+
     // NAVBAR
 
 }

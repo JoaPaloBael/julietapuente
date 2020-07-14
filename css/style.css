@@ -3,11 +3,14 @@ body {
   position: relative;
   padding: 0;
   min-height: 100vh;
-  font-family: helvetica;
+  font-family: "Scope One", serif;
   background-color: #BDBDBD;
+  font-size: 19px;
   color: #212121;
   width: 100%;
   margin: 0 auto; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: "Montserrat", sans-serif; }
   body main {
     padding-top: 10vh;
     padding-bottom: 10vh; }
@@ -86,7 +89,7 @@ body.index {
       padding: 3rem; }
       body.index main.index div h2,
       body.index main.index div p {
-        font-family: helvetica;
+        font-family: Helvetica;
         color: white;
         display: flex;
         justify-content: flex-end; }
@@ -102,8 +105,9 @@ body.index {
 /*GALERIA*/
 body.galeria {
   background-color: #757575; }
-  body.galeria h1, body.galeria h2 {
-    font-family: "Yeseva One", cursive;
+  body.galeria h1,
+  body.galeria h2 {
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     text-align: center;
     padding: 10px 0 0 0;
@@ -127,7 +131,7 @@ section.tralala {
   justify-items: center;
   align-items: center;
   background-color: #374046;
-  border-radius: 5px; }
+  border-radius: 15px; }
   section.tralala a {
     display: block;
     position: relative;
@@ -176,59 +180,114 @@ article.light-box {
     max-height: 90vh;
     max-width: 85vw; }
 
-/*TRABAJOS*/
-h1.headerTrabajos {
-  font-weight: 400;
-  text-align: center;
-  padding: 10px 0 0 0;
-  font-size: 40px;
-  margin: 0; }
-
-div.galeria {
-  background-color: #BDBDBD; }
-  div.galeria section.trabajos div {
-    justify-content: center; }
-    div.galeria section.trabajos div video {
-      max-width: 450px; }
+/*BIOGRAFIA*/
+body.bio {
+  background-color: #757575;
+  background-color: #757575;
+  background-image: url("../contenido_multimedia/landscape-5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+  body.bio::before {
+    content: "";
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: 0.5;
+    z-index: -1; }
+  body.bio main.bio {
+    width: 85vh;
+    margin: auto;
+    padding-top: 13vh; }
+    body.bio main.bio a.contenedor-foto-bio {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(189, 189, 189, 0.6);
+      border-radius: 15px 15px 0 0;
+      padding: 1rem 2rem; }
+      body.bio main.bio a.contenedor-foto-bio img {
+        width: 150px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px black; }
+    body.bio main.bio div.contenedor-texto-bio {
+      padding: 1rem;
+      background-color: rgba(189, 189, 189, 0.9);
+      border-radius: 0 0 15px 15px; }
+      body.bio main.bio div.contenedor-texto-bio p {
+        text-align: left; }
+        body.bio main.bio div.contenedor-texto-bio p i.mdi {
+          font-size: 20px;
+          color: #374046;
+          margin-right: .5rem; }
 
 /*CONTACTO*/
-div.bodyFormulario {
-  background-size: 100vw 100vh;
-  margin: 0; }
-  div.bodyFormulario h1 {
-    display: none; }
-  div.bodyFormulario form {
-    width: 450px;
-    margin: auto;
-    background: rgba(189, 189, 189, 0.5);
-    padding: 10px 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 7px; }
-    div.bodyFormulario form h2 {
-      color: #212121;
-      text-align: center;
-      margin: 0;
-      font-size: 30px;
-      margin-bottom: 20px; }
-    div.bodyFormulario form input,
-    div.bodyFormulario form textarea {
-      width: 100%;
+body.contacto {
+  background-color: #757575;
+  background-image: url("../contenido_multimedia/landscape-6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+  body.contacto::before {
+    content: "";
+    width: 100%;
+    min-height: 120vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: 0.5;
+    z-index: -1; }
+  body.contacto div.bodyFormulario {
+    background-size: 100vw 100vh;
+    margin: 0; }
+    body.contacto div.bodyFormulario h1 {
+      display: none; }
+    body.contacto div.bodyFormulario form {
+      width: 450px;
+      margin: auto;
+      background: rgba(189, 189, 189, 0.5);
+      padding: 10px 20px;
+      margin-top: 20px;
       margin-bottom: 20px;
-      padding: 7px;
-      font-size: 17px;
-      border: none; }
-    div.bodyFormulario form textarea {
-      min-height: 100px;
-      max-height: 200px;
-      max-width: 100%; }
-    div.bodyFormulario form input#boton {
-      background-color: #374046;
-      color: #FFFFFF; }
-      div.bodyFormulario form input#boton:hover {
-        background-color: #6f818d;
-        cursor: pointer;
-        color: #212121; }
+      border-radius: 7px; }
+      body.contacto div.bodyFormulario form h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #212121;
+        text-align: center;
+        margin: 0;
+        font-size: 30px;
+        margin-bottom: 20px; }
+        body.contacto div.bodyFormulario form h2 i.mdi {
+          padding-left: 1rem;
+          margin-top: 2px;
+          font-size: 35px; }
+      body.contacto div.bodyFormulario form input,
+      body.contacto div.bodyFormulario form textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7px;
+        font-size: 17px;
+        border: none;
+        border-radius: 10px; }
+      body.contacto div.bodyFormulario form textarea {
+        min-height: 100px;
+        max-height: 200px;
+        max-width: 100%; }
+      body.contacto div.bodyFormulario form input#boton {
+        background-color: #374046;
+        color: #FFFFFF; }
+        body.contacto div.bodyFormulario form input#boton:hover {
+          background-color: #6f818d;
+          cursor: pointer;
+          color: #212121; }
 
 /*FOOTER*/
 footer {
