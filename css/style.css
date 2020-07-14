@@ -9,7 +9,12 @@ body {
   color: #212121;
   width: 100%;
   margin: 0 auto; }
-  body h1, body h2, body h3, body h4, body h5, body h6 {
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h6 {
     font-family: "Montserrat", sans-serif; }
   body main {
     padding-top: 10vh;
@@ -64,6 +69,7 @@ body {
 
 /*INDEX*/
 body.index {
+  background-color: #757575;
   background-image: url("../contenido_multimedia/homepage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -183,7 +189,6 @@ article.light-box {
 /*BIOGRAFIA*/
 body.bio {
   background-color: #757575;
-  background-color: #757575;
   background-image: url("../contenido_multimedia/landscape-5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -200,7 +205,7 @@ body.bio {
     opacity: 0.5;
     z-index: -1; }
   body.bio main.bio {
-    width: 85vh;
+    width: 85vw;
     margin: auto;
     padding-top: 13vh; }
     body.bio main.bio a.contenedor-foto-bio {
@@ -249,7 +254,8 @@ body.contacto {
     body.contacto div.bodyFormulario h1 {
       display: none; }
     body.contacto div.bodyFormulario form {
-      width: 450px;
+      width: 85vw;
+      max-width: 450px;
       margin: auto;
       background: rgba(189, 189, 189, 0.5);
       padding: 10px 20px;
@@ -321,6 +327,10 @@ footer {
 
 /*RESPONSIVE MEDIA QUERY*/
 @media (max-width: 421px) {
+  body.bio main.bio a.contenedor-foto-bio img {
+    width: 100px; }
+  body.bio main.bio a.contenedor-foto-bio h1 {
+    font-size: 30px; }
   body.index main.index div {
     padding: 0; }
     body.index main.index div p {
@@ -342,8 +352,8 @@ footer {
   article.light-box a.close {
     top: 120px;
     right: 15px; }
-  form {
-    width: 100%; } }
+  body.contacto div.bodyFormulario form h2 {
+    font-size: 20px; } }
 
 @media (min-width: 422px) and (max-width: 767px) {
   section.tralala.landscape-fotos {
